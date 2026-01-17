@@ -1,2 +1,4 @@
 # Hashes of file build rules.
-1c2f8386b013d5315e71111869b83327 CMakeFiles/SpaceInvaders_autogen
+0fd410de0840bfd096bc9d4acdade9f5 CMakeFiles/SpaceInvaders_autogen
+7b7565d064e0223a4681311fec2537f6 SpaceInvaders_autogen/EWIEGA46WW/qrc_res.cpp
+61dcb216d2e725fa151f1c020837b5d5 SpaceInvaders_autogen/timestamp
