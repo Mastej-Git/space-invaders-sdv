@@ -182,7 +182,7 @@ void Player::spawn() {
 
     if (rand_numb == 1) {
         Enemy *enemy = new Enemy();
-        enemy->setBrush(Qt::blue);
+        // enemy->setBrush(Qt::blue);
         scene()->addItem(enemy);
     }
     else if (rand_numb == 2) {

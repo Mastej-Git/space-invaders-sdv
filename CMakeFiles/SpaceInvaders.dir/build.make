@@ -82,6 +82,7 @@ SpaceInvaders_autogen/EWIEGA46WW/qrc_res.cpp: enemy_cyborg.png
 SpaceInvaders_autogen/EWIEGA46WW/qrc_res.cpp: flame.png
 SpaceInvaders_autogen/EWIEGA46WW/qrc_res.cpp: player_ship.png
 SpaceInvaders_autogen/EWIEGA46WW/qrc_res.cpp: enemy_sentient.png
+SpaceInvaders_autogen/EWIEGA46WW/qrc_res.cpp: enemy.png
 SpaceInvaders_autogen/EWIEGA46WW/qrc_res.cpp: /usr/lib/qt5/bin/rcc
 SpaceInvaders_autogen/EWIEGA46WW/qrc_res.cpp: /usr/lib/qt5/bin/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for res.qrc"

@@ -290,12 +290,13 @@ CMakeFiles/SpaceInvaders.dir/src/Enemy.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
  /home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/src/../inc/Enemy.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsRectItem \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPixmapItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
  /usr/include/c++/14/variant \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsRectItem \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/src/../inc/Game.h \
@@ -335,7 +336,6 @@ CMakeFiles/SpaceInvaders.dir/src/Enemy.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
  /home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/src/../inc/Player.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPixmapItem \
  /usr/include/x86_64-linux-gnu/qt5/QtGamepad/QGamepad \
  /usr/include/x86_64-linux-gnu/qt5/QtGamepad/qgamepad.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \

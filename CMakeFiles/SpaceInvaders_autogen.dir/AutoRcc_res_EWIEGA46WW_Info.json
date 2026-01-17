@@ -12,7 +12,8 @@
 		"/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/enemy_cyborg.png",
 		"/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/flame.png",
 		"/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/player_ship.png",
-		"/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/enemy_sentient.png"
+		"/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/enemy_sentient.png",
+		"/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/enemy.png"
 	],
 	"LOCK_FILE" : "/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/SpaceInvaders_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
