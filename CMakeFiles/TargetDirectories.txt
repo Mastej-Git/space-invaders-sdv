@@ -1,9 +1,0 @@
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/SpaceInvaders.dir
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/edit_cache.dir
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/rebuild_cache.dir
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/list_install_components.dir
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/install.dir
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/install/local.dir
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/install/strip.dir
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/SpaceInvaders_autogen_timestamp_deps.dir
-/home/feniks/my_ws/studia/6sem/wds/space-invaders-sdv/CMakeFiles/SpaceInvaders_autogen.dir

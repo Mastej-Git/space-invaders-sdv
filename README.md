@@ -12,3 +12,10 @@ A game application where user can fly a ship in space and shot down the enemies 
 
 This section guides you through building Space Invaders from source code.
 
+```bash
+mkdir build && cd build
+cmake ..
+make
+./SpaceInvaders
+```
+
