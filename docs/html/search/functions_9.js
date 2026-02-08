@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['laser_130',['Laser',['../classLaser.html#a68465e89283dffcc29a37e94693c6f87',1,'Laser']]]
+  ['keypressevent_175',['keyPressEvent',['../classPlayer.html#a4d269c4118c29b0ee85c1e0f674260ee',1,'Player']]],
+  ['keyreleaseevent_176',['keyReleaseEvent',['../classPlayer.html#a09f3d5dea93b5699138eba6f4f420b27',1,'Player']]]
 ];

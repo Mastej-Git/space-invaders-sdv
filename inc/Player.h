@@ -60,8 +60,8 @@ public slots:
     void handleButtonSqChange();
     void handleButtonTrChange();
 
-    void handleXAxisLeftThumbstick(double value);
-    void handleYAxisLeftThumbstick(double value);
+    void handleXAxisLeftThumbstick(const double value);
+    void handleYAxisLeftThumbstick(const double value);
 };
 
 #endif // MYRECT_H

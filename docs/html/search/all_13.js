@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['yaxis_159',['yAxis',['../classQCustomPlot.html#af6fea5679725b152c14facd920b19367',1,'QCustomPlot']]],
-  ['yaxis2_160',['yAxis2',['../classQCustomPlot.html#af13fdc5bce7d0fabd640f13ba805c0b7',1,'QCustomPlot']]]
+  ['y_5fmove_101',['y_move',['../classFlamethrower.html#acdfd90630acfa90d678e86508af19367',1,'Flamethrower']]],
+  ['yaxisvalue_102',['yAxisValue',['../classPlayer.html#aa0c45ce69ab9ad100b3363e71f100c6a',1,'Player']]]
 ];

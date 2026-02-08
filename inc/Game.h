@@ -43,7 +43,7 @@ public:
 
     Game(QWidget *parent = 0);
 
-    void drawPanel(int x, int y, int width, int height, QColor color, double opacity);
+    void drawPanel(const int x, const int y, const int width, const int height, const QColor color, const double opacity);
     void drawGUI();
     void comboBoxChange(int index, QComboBox &language);
 

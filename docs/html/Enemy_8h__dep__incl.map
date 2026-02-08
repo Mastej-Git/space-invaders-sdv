@@ -1,7 +1,6 @@
 <map id="/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/inc/Enemy.h" name="/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/inc/Enemy.h">
-<area shape="rect" id="node1" title="Enemy header file. Basic enemy type that spawns randomly and is weak to Flamethrower." alt="" coords="382,5,570,61"/>
+<area shape="rect" id="node1" title="Enemy header file. Basic enemy type that spawns randomly and is weak to Flamethrower." alt="" coords="259,5,447,61"/>
 <area shape="rect" id="node2" href="$Enemy_8cpp.html" title="Enemy source file. Contains constructor and move function." alt="" coords="5,109,208,165"/>
 <area shape="rect" id="node3" href="$Flamethrower_8cpp.html" title="Flamethrower weapon source file. Contains code for all the functions from header file." alt="" coords="232,109,475,165"/>
-<area shape="rect" id="node4" href="$Game_8cpp.html" title="Game source file. Contains code for all the functions from header file." alt="" coords="499,109,698,165"/>
-<area shape="rect" id="node5" href="$Player_8cpp.html" title="Player source file. Contains code for all the functions from header file." alt="" coords="721,109,921,165"/>
+<area shape="rect" id="node4" href="$Player_8cpp.html" title="Player source file. Contains code for all the functions from header file." alt="" coords="499,109,699,165"/>
 </map>

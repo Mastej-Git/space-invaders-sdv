@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classFlamethrower.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
@@ -81,42 +101,39 @@ Inheritance diagram for Flamethrower:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlamethrower__inherit__graph.png" border="0" usemap="#aFlamethrower_inherit__map" alt="Inheritance graph"/></div>
 <map name="aFlamethrower_inherit__map" id="aFlamethrower_inherit__map">
-<area shape="rect" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy." alt="" coords="54,80,155,107"/>
+<area shape="rect" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy." alt="" coords="58,80,159,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,76,32"/>
-<area shape="rect" title=" " alt="" coords="101,5,239,32"/>
+<area shape="rect" title=" " alt="" coords="101,5,255,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Flamethrower:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlamethrower__coll__graph.png" border="0" usemap="#aFlamethrower_coll__map" alt="Collaboration graph"/></div>
 <map name="aFlamethrower_coll__map" id="aFlamethrower_coll__map">
-<area shape="rect" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy." alt="" coords="54,80,155,107"/>
+<area shape="rect" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy." alt="" coords="58,80,159,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,76,32"/>
-<area shape="rect" title=" " alt="" coords="101,5,239,32"/>
+<area shape="rect" title=" " alt="" coords="101,5,255,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:ac8ebd33408e6e159bc054551eec7ccbb"><td class="memItemLeft" align="right" valign="top"><a id="ac8ebd33408e6e159bc054551eec7ccbb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlamethrower.html#ac8ebd33408e6e159bc054551eec7ccbb">move</a> ()</td></tr>
-<tr class="memdesc:ac8ebd33408e6e159bc054551eec7ccbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to move the Flamthrower and check for collision with other objects or boundries of the screen. <br /></td></tr>
+<tr class="memitem:ac8ebd33408e6e159bc054551eec7ccbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlamethrower.html#ac8ebd33408e6e159bc054551eec7ccbb">move</a> ()</td></tr>
+<tr class="memdesc:ac8ebd33408e6e159bc054551eec7ccbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to move the Flamthrower and check for collision with other objects or boundries of the screen.  <a href="classFlamethrower.html#ac8ebd33408e6e159bc054551eec7ccbb">More...</a><br /></td></tr>
 <tr class="separator:ac8ebd33408e6e159bc054551eec7ccbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a745759f159143d0ca252ef0917cab61d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlamethrower.html#a745759f159143d0ca252ef0917cab61d">Flamethrower</a> (double x_move, double y_move)</td></tr>
+<tr class="memitem:a745759f159143d0ca252ef0917cab61d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlamethrower.html#a745759f159143d0ca252ef0917cab61d">Flamethrower</a> (double <a class="el" href="classFlamethrower.html#a06fcd46026b33e85d3a6167af4fc3e06">x_move</a>, double <a class="el" href="classFlamethrower.html#acdfd90630acfa90d678e86508af19367">y_move</a>)</td></tr>
 <tr class="memdesc:a745759f159143d0ca252ef0917cab61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a>:: <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> object.  <a href="classFlamethrower.html#a745759f159143d0ca252ef0917cab61d">More...</a><br /></td></tr>
 <tr class="separator:a745759f159143d0ca252ef0917cab61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a06fcd46026b33e85d3a6167af4fc3e06"><td class="memItemLeft" align="right" valign="top"><a id="a06fcd46026b33e85d3a6167af4fc3e06"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>x_move</b></td></tr>
+<tr class="memitem:a06fcd46026b33e85d3a6167af4fc3e06"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlamethrower.html#a06fcd46026b33e85d3a6167af4fc3e06">x_move</a></td></tr>
 <tr class="separator:a06fcd46026b33e85d3a6167af4fc3e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdfd90630acfa90d678e86508af19367"><td class="memItemLeft" align="right" valign="top"><a id="acdfd90630acfa90d678e86508af19367"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>y_move</b></td></tr>
+<tr class="memitem:acdfd90630acfa90d678e86508af19367"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlamethrower.html#acdfd90630acfa90d678e86508af19367">y_move</a></td></tr>
 <tr class="separator:acdfd90630acfa90d678e86508af19367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -151,11 +168,69 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>y_move</b></td></tr
 <p>Construct a new <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a>:: <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x_move</td><td>describes which way should the <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> particle go on X axis </td></tr>
-    <tr><td class="paramname">y_move</td><td>describes which way should the <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> particle go on Y axis </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_move</td><td>describes which way should the <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> particle go on X axis </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_move</td><td>describes which way should the <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> particle go on Y axis </td></tr>
   </table>
   </dd>
 </dl>
+<p>Assigns the pixmap, position and timer</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac8ebd33408e6e159bc054551eec7ccbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ebd33408e6e159bc054551eec7ccbb">&#9670;&nbsp;</a></span>move</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Flamethrower::move </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to move the Flamthrower and check for collision with other objects or boundries of the screen. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a06fcd46026b33e85d3a6167af4fc3e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fcd46026b33e85d3a6167af4fc3e06">&#9670;&nbsp;</a></span>x_move</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Flamethrower::x_move</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdfd90630acfa90d678e86508af19367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfd90630acfa90d678e86508af19367">&#9670;&nbsp;</a></span>y_move</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Flamethrower::y_move</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -164,9 +239,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>y_move</b></td></tr
 <li>/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/src/<a class="el" href="Flamethrower_8cpp.html">Flamethrower.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classFlamethrower.html">Flamethrower</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

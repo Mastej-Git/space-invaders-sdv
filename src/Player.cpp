@@ -28,8 +28,13 @@
 /**
  * @brief Construct a new Player:: Player object. Sets all the key flags to false and connects the gamepad
  * 
+ * @param[in] gamepad gamepad pointer to read axis values
  */
 Player::Player(QGamepad *gamepad) {
+
+    this->setPixmap(QPixmap(":/images/player_ship.png"));
+    this->setPos(800/2 - 50, 600 - 100);
+
     this->keyLeftPressed = false;
     this->keyRightPressed = false;
     this->keyUpPressed = false;
@@ -44,7 +49,7 @@ Player::Player(QGamepad *gamepad) {
 /**
  * @brief Listens and sets the key flags to true on press and reads the controller inputs
  * 
- * @param event 
+ * @param[in] event event variable indicating any event in the app, like button press.
  */
 void Player::keyPressEvent(QKeyEvent *event) {
     connect(this->gamepad, &QGamepad::buttonLeftChanged, this, &Player::handleButtonLeftChange);
@@ -61,7 +66,6 @@ void Player::keyPressEvent(QKeyEvent *event) {
 
     if (event->key() == Qt::Key_Left) {
         this->keyLeftPressed = true;
-//        qDebug() << "Controller key pressed";
     } else if (event->key() == Qt::Key_Right) {
         this->keyRightPressed = true;
     } else if (event->key() == Qt::Key_Up) {
@@ -80,7 +84,7 @@ void Player::keyPressEvent(QKeyEvent *event) {
 /**
  * @brief Listens and sets the key flags to false on release
  * 
- * @param event 
+ * @param[in] event 
  */
 void Player::keyReleaseEvent(QKeyEvent *event) {
     // Clear flags when keys are released
@@ -142,7 +146,7 @@ void Player::updatePlayerBullets() {
     if (keySpacebarPressed) {
         Bullet *bullet = new Bullet();
         bullet->setPos(x(), y());
-        bullet->setBrush(Qt::yellow);
+        // bullet->setBrush(Qt::yellow);
         scene()->addItem(bullet);
     }
 
@@ -155,8 +159,7 @@ void Player::updatePlayerBullets() {
         flamethrower[4] = new Flamethrower(5, -3);
 
         for (int i = 0; i < 5; ++i) {
-            flamethrower[i]->setPos(x(), y());
-            flamethrower[i]->setBrush(Qt::cyan);
+            flamethrower[i]->setPos(x() + 46, y());
             scene()->addItem((flamethrower[i]));
         }
     }
@@ -169,27 +172,6 @@ void Player::updatePlayerBullets() {
     }
 }
 
-//void Player::keyPressEvent(QKeyEvent *event) {
-//    if (event->key() == Qt::Key_Left && pos().x() > 0) {
-//        setPos(x() - 10, y());
-//    }
-//    if (event->key() == Qt::Key_Right && pos().x() + rect().width() < 800) {
-//        setPos(x() + 10, y());
-//    }
-//    if (event->key() == Qt::Key_Up && pos().y() > 0) {
-//        setPos(x(), y() - 10);
-//    }
-//    if (event->key() == Qt::Key_Down && pos().y() + rect().height() < 600) {
-//        setPos(x(), y() + 10);
-//    }
-
-//    if (event->key() == Qt::Key_Space) {
-//        Bullet *bullet = new Bullet();
-//        bullet->setPos(x(), y());
-//        scene()->addItem(bullet);
-//    }
-//}
-
 /**
  * @brief Slot position to spawn all the enemy types
  * 
@@ -200,17 +182,17 @@ void Player::spawn() {
 
     if (rand_numb == 1) {
         Enemy *enemy = new Enemy();
-        enemy->setBrush(Qt::blue);
+        // enemy->setBrush(Qt::blue);
         scene()->addItem(enemy);
     }
     else if (rand_numb == 2) {
         EnemyCyborg *cyborg_enemy = new EnemyCyborg();
-        cyborg_enemy->setBrush(Qt::lightGray);
+//        cyborg_enemy->setBrush(Qt::lightGray);
         scene()->addItem(cyborg_enemy);
     }
     else if (rand_numb == 3) {
         EnemySentients *sentient_enemy = new EnemySentients();
-        sentient_enemy->setBrush(Qt::darkRed);
+//        sentient_enemy->setBrush(Qt::darkRed);
         scene()->addItem(sentient_enemy);
     }
 
@@ -274,10 +256,10 @@ void Player::handleButtonTrChange() {
 
 /**
  * @brief Player::handleXAxisLeftThumbstick Signal to read the X axis thumbstick value
- * @param value thumbstick value (-1.0 - 1.0)
+ * @param[in] value thumbstick value (-1.0 - 1.0)
  */
 
-void Player::handleXAxisLeftThumbstick(double value) {
+void Player::handleXAxisLeftThumbstick(const double value) {
     this->xAxisValue = value;
 
     if (value > 0.5) {
@@ -294,10 +276,10 @@ void Player::handleXAxisLeftThumbstick(double value) {
 
 /**
  * @brief Player::handleYAxisLeftThumbstick Signal to read the X axis thumbstick value
- * @param value thumbstick value (-1.0 - 1.0)
+ * @param[in] value thumbstick value (-1.0 - 1.0)
  */
 
-void Player::handleYAxisLeftThumbstick(double value) {
+void Player::handleYAxisLeftThumbstick(const double value) {
     this->yAxisValue = value;
 
     if (value > 0.5) {

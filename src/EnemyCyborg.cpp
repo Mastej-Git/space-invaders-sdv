@@ -30,7 +30,10 @@ EnemyCyborg::EnemyCyborg() {
     int rand_numb = rand() % 700;
     setPos(rand_numb, 0);
 
-    setRect(0, 0, 65, 140);
+    // setRect(0, 0, 65, 140);
+    this->setPixmap(QPixmap(":/images/enemy_cyborg.png"));
+    this->setTransformOriginPoint(50, 60);
+    this->setRotation(180);
 
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(move()));

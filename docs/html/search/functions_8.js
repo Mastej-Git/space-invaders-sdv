@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['keypressevent_128',['keyPressEvent',['../classPlayer.html#a4d269c4118c29b0ee85c1e0f674260ee',1,'Player']]],
-  ['keyreleaseevent_129',['keyReleaseEvent',['../classPlayer.html#a09f3d5dea93b5699138eba6f4f420b27',1,'Player']]]
+  ['increase_173',['increase',['../classScore.html#ab5dbfab6935903c075509546878cfbda',1,'Score']]],
+  ['is_5fcontroller_5fconnected_174',['is_controller_connected',['../classControllerManager.html#afd5d22b04ab572fe2db52533727e023c',1,'ControllerManager']]]
 ];

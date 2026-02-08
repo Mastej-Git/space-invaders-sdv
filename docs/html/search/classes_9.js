@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qcustomplot_76',['QCustomPlot',['../classQCustomPlot.html',1,'']]]
+  ['qcustomplot_115',['QCustomPlot',['../classQCustomPlot.html',1,'']]]
 ];

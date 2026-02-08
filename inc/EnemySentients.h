@@ -12,7 +12,7 @@
 #ifndef ENEMYSENTIENTS_H
 #define ENEMYSENTIENTS_H
 
-#include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
 #include <QObject>
 
 /**
@@ -20,7 +20,7 @@
  * 
  */
 
-class EnemySentients : public QObject, public QGraphicsRectItem {
+class EnemySentients : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     EnemySentients();

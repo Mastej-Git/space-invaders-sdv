@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('ComboBoxTxt_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">ComboBoxTxt.h</div>  </div>
@@ -85,20 +101,20 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> index;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">index</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QComboBox *combo_box;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QGraphicsTextItem *text;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classHealth.html">Health</a> *health;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classScore.html">Score</a> *score;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classPlayer.html">Player</a> *player;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QGraphicsTextItem **texts_table;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classComboBoxTxt.html#a9beac6eef8001037ceb0556a6553e1d5">   33</a></span>&#160;    QComboBox *<a class="code" href="classComboBoxTxt.html#a9beac6eef8001037ceb0556a6553e1d5">combo_box</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classComboBoxTxt.html#ab1e3698b0b7e5c14103263c3fbd06881">   34</a></span>&#160;    QGraphicsTextItem *<a class="code" href="classComboBoxTxt.html#ab1e3698b0b7e5c14103263c3fbd06881">text</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classComboBoxTxt.html#a8fd7ada78e8f8e5b0e8eb60866bed77a">   35</a></span>&#160;    <a class="code" href="classHealth.html">Health</a> *<a class="code" href="classComboBoxTxt.html#a8fd7ada78e8f8e5b0e8eb60866bed77a">health</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classComboBoxTxt.html#ad26f3c74cdb029495110877f6022b886">   36</a></span>&#160;    <a class="code" href="classScore.html">Score</a> *<a class="code" href="classComboBoxTxt.html#ad26f3c74cdb029495110877f6022b886">score</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classComboBoxTxt.html#ab816b7fc66a92d4900335f2ba46cb177">   37</a></span>&#160;    <a class="code" href="classPlayer.html">Player</a> *<a class="code" href="classComboBoxTxt.html#ab816b7fc66a92d4900335f2ba46cb177">player</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classComboBoxTxt.html#a5b10295a89ae647e77059c85826a7cfb">   38</a></span>&#160;    QGraphicsTextItem **<a class="code" href="classComboBoxTxt.html#a5b10295a89ae647e77059c85826a7cfb">texts_table</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classComboBoxTxt.html#a4216995c861b1d0f1e4c2d84f50294e9">ComboBoxTxt</a>(QStringList list, QString text, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <a class="code" href="classHealth.html">Health</a> *health, <a class="code" href="classScore.html">Score</a> *score, <a class="code" href="classPlayer.html">Player</a> *player, QGraphicsTextItem **texts_table);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classComboBoxTxt.html#a17d38423b22d3a1819ff82075d03428e">ComboBoxTxt</a>(<span class="keyword">const</span> QStringList &amp;list, <span class="keyword">const</span> QString <a class="code" href="classComboBoxTxt.html#ab1e3698b0b7e5c14103263c3fbd06881">text</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y, <a class="code" href="classHealth.html">Health</a> *<a class="code" href="classComboBoxTxt.html#a8fd7ada78e8f8e5b0e8eb60866bed77a">health</a>, <a class="code" href="classScore.html">Score</a> *<a class="code" href="classComboBoxTxt.html#ad26f3c74cdb029495110877f6022b886">score</a>, <a class="code" href="classPlayer.html">Player</a> *<a class="code" href="classComboBoxTxt.html#ab816b7fc66a92d4900335f2ba46cb177">player</a>, QGraphicsTextItem **<a class="code" href="classComboBoxTxt.html#a5b10295a89ae647e77059c85826a7cfb">texts_table</a>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classComboBoxTxt.html#ad1dff9450e7f4eb75697d5bf344dd2d7">change_item</a>(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classComboBoxTxt.html#af69e9e56f658a52a2e7fb9da9e920e69">change_language</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classComboBoxTxt.html#ad1dff9450e7f4eb75697d5bf344dd2d7">change_item</a>(<span class="keywordtype">int</span> <a class="code" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">index</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classComboBoxTxt.html#af69e9e56f658a52a2e7fb9da9e920e69">change_language</a>(<span class="keywordtype">int</span> <a class="code" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">index</a>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// COMBOBOXTXT_H</span></div>
@@ -106,16 +122,27 @@ $(function() {
 <div class="ttc" id="aPlayer_8h_html"><div class="ttname"><a href="Player_8h.html">Player.h</a></div><div class="ttdoc">Player header file. Player is controllabe character that user can play. It can shot at move.</div></div>
 <div class="ttc" id="aScore_8h_html"><div class="ttname"><a href="Score_8h.html">Score.h</a></div><div class="ttdoc">Score header file. Displays score points earned by player by shooting down enemys.</div></div>
 <div class="ttc" id="aclassComboBoxTxt_html"><div class="ttname"><a href="classComboBoxTxt.html">ComboBoxTxt</a></div><div class="ttdoc">ComboBox with Text. Used to change language and game difficulty.</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.h:27</div></div>
-<div class="ttc" id="aclassComboBoxTxt_html_a4216995c861b1d0f1e4c2d84f50294e9"><div class="ttname"><a href="classComboBoxTxt.html#a4216995c861b1d0f1e4c2d84f50294e9">ComboBoxTxt::ComboBoxTxt</a></div><div class="ttdeci">ComboBoxTxt(QStringList list, QString text, int x, int y, Health *health, Score *score, Player *player, QGraphicsTextItem **texts_table)</div><div class="ttdoc">Construct a new Combo Box Txt:: Combo Box Txt object.</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.cpp:25</div></div>
+<div class="ttc" id="aclassComboBoxTxt_html_a17d38423b22d3a1819ff82075d03428e"><div class="ttname"><a href="classComboBoxTxt.html#a17d38423b22d3a1819ff82075d03428e">ComboBoxTxt::ComboBoxTxt</a></div><div class="ttdeci">ComboBoxTxt(const QStringList &amp;list, const QString text, const int x, const int y, Health *health, Score *score, Player *player, QGraphicsTextItem **texts_table)</div><div class="ttdoc">Construct a new Combo Box Txt:: Combo Box Txt object.</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.cpp:25</div></div>
+<div class="ttc" id="aclassComboBoxTxt_html_a5b10295a89ae647e77059c85826a7cfb"><div class="ttname"><a href="classComboBoxTxt.html#a5b10295a89ae647e77059c85826a7cfb">ComboBoxTxt::texts_table</a></div><div class="ttdeci">QGraphicsTextItem ** texts_table</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.h:38</div></div>
+<div class="ttc" id="aclassComboBoxTxt_html_a850d7e6e33699823274b3883db5d386a"><div class="ttname"><a href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">ComboBoxTxt::index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.h:31</div></div>
+<div class="ttc" id="aclassComboBoxTxt_html_a8fd7ada78e8f8e5b0e8eb60866bed77a"><div class="ttname"><a href="classComboBoxTxt.html#a8fd7ada78e8f8e5b0e8eb60866bed77a">ComboBoxTxt::health</a></div><div class="ttdeci">Health * health</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.h:35</div></div>
+<div class="ttc" id="aclassComboBoxTxt_html_a9beac6eef8001037ceb0556a6553e1d5"><div class="ttname"><a href="classComboBoxTxt.html#a9beac6eef8001037ceb0556a6553e1d5">ComboBoxTxt::combo_box</a></div><div class="ttdeci">QComboBox * combo_box</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.h:33</div></div>
+<div class="ttc" id="aclassComboBoxTxt_html_ab1e3698b0b7e5c14103263c3fbd06881"><div class="ttname"><a href="classComboBoxTxt.html#ab1e3698b0b7e5c14103263c3fbd06881">ComboBoxTxt::text</a></div><div class="ttdeci">QGraphicsTextItem * text</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.h:34</div></div>
+<div class="ttc" id="aclassComboBoxTxt_html_ab816b7fc66a92d4900335f2ba46cb177"><div class="ttname"><a href="classComboBoxTxt.html#ab816b7fc66a92d4900335f2ba46cb177">ComboBoxTxt::player</a></div><div class="ttdeci">Player * player</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.h:37</div></div>
 <div class="ttc" id="aclassComboBoxTxt_html_ad1dff9450e7f4eb75697d5bf344dd2d7"><div class="ttname"><a href="classComboBoxTxt.html#ad1dff9450e7f4eb75697d5bf344dd2d7">ComboBoxTxt::change_item</a></div><div class="ttdeci">void change_item(int index)</div><div class="ttdoc">Signal function to obatin index of the chosen item from difficulty ComboBoxTxt.</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.cpp:59</div></div>
+<div class="ttc" id="aclassComboBoxTxt_html_ad26f3c74cdb029495110877f6022b886"><div class="ttname"><a href="classComboBoxTxt.html#ad26f3c74cdb029495110877f6022b886">ComboBoxTxt::score</a></div><div class="ttdeci">Score * score</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.h:36</div></div>
 <div class="ttc" id="aclassComboBoxTxt_html_af69e9e56f658a52a2e7fb9da9e920e69"><div class="ttname"><a href="classComboBoxTxt.html#af69e9e56f658a52a2e7fb9da9e920e69">ComboBoxTxt::change_language</a></div><div class="ttdeci">void change_language(int index)</div><div class="ttdoc">Signal function to obatin index of the chosen item from language ComboBoxTxt.</div><div class="ttdef"><b>Definition:</b> ComboBoxTxt.cpp:77</div></div>
 <div class="ttc" id="aclassHealth_html"><div class="ttname"><a href="classHealth.html">Health</a></div><div class="ttdoc">Red text in upper left corner indicating player health points.</div><div class="ttdef"><b>Definition:</b> Health.h:23</div></div>
 <div class="ttc" id="aclassPlayer_html"><div class="ttname"><a href="classPlayer.html">Player</a></div><div class="ttdoc">Main Player class to controll player and handle all events connectes to his movement.</div><div class="ttdef"><b>Definition:</b> Player.h:25</div></div>
 <div class="ttc" id="aclassScore_html"><div class="ttname"><a href="classScore.html">Score</a></div><div class="ttdoc">Cyan text in upper left corner indicating player score points.</div><div class="ttdef"><b>Definition:</b> Score.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="ComboBoxTxt_8h.html">ComboBoxTxt.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

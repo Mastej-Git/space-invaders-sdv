@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 project(SpaceInvaders VERSION 0.1 LANGUAGES CXX)
 
@@ -14,6 +14,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt5 REQUIRED COMPONENTS Charts)
 find_package(Qt5 REQUIRED COMPONENTS Gamepad)
+find_package(Qt5 REQUIRED COMPONENTS LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES

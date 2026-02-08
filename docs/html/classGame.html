@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classGame.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
@@ -84,7 +104,7 @@ Inheritance diagram for Game:</div>
 <area shape="rect" title="Main game class to controll events in the game." alt="" coords="33,80,91,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,119,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Game:</div>
 <div class="dyncontent">
@@ -103,12 +123,11 @@ Collaboration diagram for Game:</div>
 <area shape="rect" href="classQCustomPlot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ..." alt="" coords="250,81,351,108"/>
 <area shape="rect" title=" " alt="" coords="433,5,587,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a786270db041794c82bd32be55a416688"><td class="memItemLeft" align="right" valign="top"><a id="a786270db041794c82bd32be55a416688"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGraph</b> ()</td></tr>
+<tr class="memitem:a786270db041794c82bd32be55a416688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a786270db041794c82bd32be55a416688">updateGraph</a> ()</td></tr>
 <tr class="separator:a786270db041794c82bd32be55a416688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -116,45 +135,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3c64a8dd73de0a99849db8ec0e9a86c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae3c64a8dd73de0a99849db8ec0e9a86c">Game</a> (QWidget *parent=0)</td></tr>
 <tr class="memdesc:ae3c64a8dd73de0a99849db8ec0e9a86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGame.html" title="Main game class to controll events in the game.">Game</a>:: <a class="el" href="classGame.html" title="Main game class to controll events in the game.">Game</a> object. Crates and sets all the game components - scene, player, score, health, enemies, GUI. Also creates signals for enemy spawning, updating player position, updating player projectiles.  <a href="classGame.html#ae3c64a8dd73de0a99849db8ec0e9a86c">More...</a><br /></td></tr>
 <tr class="separator:ae3c64a8dd73de0a99849db8ec0e9a86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a759ede70d6e7cb6db78eceb5c4603d9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a759ede70d6e7cb6db78eceb5c4603d9c">drawPanel</a> (int x, int y, int width, int height, QColor color, double opacity)</td></tr>
-<tr class="memdesc:a759ede70d6e7cb6db78eceb5c4603d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates GUI background panel wothout any widgets.  <a href="classGame.html#a759ede70d6e7cb6db78eceb5c4603d9c">More...</a><br /></td></tr>
-<tr class="separator:a759ede70d6e7cb6db78eceb5c4603d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae730058e66f3ed1290b20e78b531f004"><td class="memItemLeft" align="right" valign="top"><a id="ae730058e66f3ed1290b20e78b531f004"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae730058e66f3ed1290b20e78b531f004">drawGUI</a> ()</td></tr>
-<tr class="memdesc:ae730058e66f3ed1290b20e78b531f004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the GUI widgets - controller indicator circle, difficulty <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>, language <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>, and all the texts. <br /></td></tr>
+<tr class="memitem:a7ff59209d4edf12c84266b9a6645a629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a7ff59209d4edf12c84266b9a6645a629">drawPanel</a> (const int x, const int y, const int width, const int height, const QColor color, const double opacity)</td></tr>
+<tr class="memdesc:a7ff59209d4edf12c84266b9a6645a629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates GUI background panel wothout any widgets.  <a href="classGame.html#a7ff59209d4edf12c84266b9a6645a629">More...</a><br /></td></tr>
+<tr class="separator:a7ff59209d4edf12c84266b9a6645a629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae730058e66f3ed1290b20e78b531f004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae730058e66f3ed1290b20e78b531f004">drawGUI</a> ()</td></tr>
+<tr class="memdesc:ae730058e66f3ed1290b20e78b531f004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the GUI widgets - controller indicator circle, difficulty <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>, language <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>, and all the texts.  <a href="classGame.html#ae730058e66f3ed1290b20e78b531f004">More...</a><br /></td></tr>
 <tr class="separator:ae730058e66f3ed1290b20e78b531f004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d93d3b7af946d169a53032d901316d"><td class="memItemLeft" align="right" valign="top"><a id="a60d93d3b7af946d169a53032d901316d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>comboBoxChange</b> (int index, QComboBox &amp;language)</td></tr>
+<tr class="memitem:a60d93d3b7af946d169a53032d901316d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a60d93d3b7af946d169a53032d901316d">comboBoxChange</a> (int index, QComboBox &amp;<a class="el" href="classGame.html#ad2d569070e1bfd72a00ff659d13bdec0">language</a>)</td></tr>
 <tr class="separator:a60d93d3b7af946d169a53032d901316d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5107ecf532a99e8e0dfcecd1d0b5b9f5"><td class="memItemLeft" align="right" valign="top"><a id="a5107ecf532a99e8e0dfcecd1d0b5b9f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event)</td></tr>
+<tr class="memitem:a5107ecf532a99e8e0dfcecd1d0b5b9f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a5107ecf532a99e8e0dfcecd1d0b5b9f5">resizeEvent</a> (QResizeEvent *event)</td></tr>
+<tr class="memdesc:a5107ecf532a99e8e0dfcecd1d0b5b9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helps scaling and rezising window.  <a href="classGame.html#a5107ecf532a99e8e0dfcecd1d0b5b9f5">More...</a><br /></td></tr>
 <tr class="separator:a5107ecf532a99e8e0dfcecd1d0b5b9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8119e3b9a632906c6808fa294b46a92a"><td class="memItemLeft" align="right" valign="top"><a id="a8119e3b9a632906c6808fa294b46a92a"></a>
-QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b></td></tr>
+<tr class="memitem:a8119e3b9a632906c6808fa294b46a92a"><td class="memItemLeft" align="right" valign="top">QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a8119e3b9a632906c6808fa294b46a92a">scene</a></td></tr>
 <tr class="separator:a8119e3b9a632906c6808fa294b46a92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abec70aa1c0269a9a7e171af4d79e08bf"><td class="memItemLeft" align="right" valign="top"><a id="abec70aa1c0269a9a7e171af4d79e08bf"></a>
-<a class="el" href="classPlayer.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>player</b></td></tr>
+<tr class="memitem:abec70aa1c0269a9a7e171af4d79e08bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlayer.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#abec70aa1c0269a9a7e171af4d79e08bf">player</a></td></tr>
 <tr class="separator:abec70aa1c0269a9a7e171af4d79e08bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad195acc6b5ee17a5a07fea0b7b4ff5e2"><td class="memItemLeft" align="right" valign="top"><a id="ad195acc6b5ee17a5a07fea0b7b4ff5e2"></a>
-<a class="el" href="classScore.html">Score</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>score</b></td></tr>
+<tr class="memitem:ad195acc6b5ee17a5a07fea0b7b4ff5e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScore.html">Score</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ad195acc6b5ee17a5a07fea0b7b4ff5e2">score</a></td></tr>
 <tr class="separator:ad195acc6b5ee17a5a07fea0b7b4ff5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cfa8ef83412c73d759b3965804f42aa"><td class="memItemLeft" align="right" valign="top"><a id="a4cfa8ef83412c73d759b3965804f42aa"></a>
-<a class="el" href="classHealth.html">Health</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>health</b></td></tr>
+<tr class="memitem:a4cfa8ef83412c73d759b3965804f42aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHealth.html">Health</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a4cfa8ef83412c73d759b3965804f42aa">health</a></td></tr>
 <tr class="separator:a4cfa8ef83412c73d759b3965804f42aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a151142ea1677dac2e2ddbaaa82e7569f"><td class="memItemLeft" align="right" valign="top"><a id="a151142ea1677dac2e2ddbaaa82e7569f"></a>
-<a class="el" href="classComboBoxTxt.html">ComboBoxTxt</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>difficulty</b></td></tr>
+<tr class="memitem:a151142ea1677dac2e2ddbaaa82e7569f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComboBoxTxt.html">ComboBoxTxt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a151142ea1677dac2e2ddbaaa82e7569f">difficulty</a></td></tr>
 <tr class="separator:a151142ea1677dac2e2ddbaaa82e7569f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d569070e1bfd72a00ff659d13bdec0"><td class="memItemLeft" align="right" valign="top"><a id="ad2d569070e1bfd72a00ff659d13bdec0"></a>
-<a class="el" href="classComboBoxTxt.html">ComboBoxTxt</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>language</b></td></tr>
+<tr class="memitem:ad2d569070e1bfd72a00ff659d13bdec0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComboBoxTxt.html">ComboBoxTxt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ad2d569070e1bfd72a00ff659d13bdec0">language</a></td></tr>
 <tr class="separator:ad2d569070e1bfd72a00ff659d13bdec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa35af834973e67352c46669757869a32"><td class="memItemLeft" align="right" valign="top"><a id="aa35af834973e67352c46669757869a32"></a>
-<a class="el" href="classControllerManager.html">ControllerManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>manager</b></td></tr>
+<tr class="memitem:aa35af834973e67352c46669757869a32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classControllerManager.html">ControllerManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#aa35af834973e67352c46669757869a32">manager</a></td></tr>
 <tr class="separator:aa35af834973e67352c46669757869a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21883094138ac3de6c3f2c3523937235"><td class="memItemLeft" align="right" valign="top"><a id="a21883094138ac3de6c3f2c3523937235"></a>
-<a class="el" href="classAxisPlot.html">AxisPlot</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>axises_plot</b></td></tr>
+<tr class="memitem:a21883094138ac3de6c3f2c3523937235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAxisPlot.html">AxisPlot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a21883094138ac3de6c3f2c3523937235">axises_plot</a></td></tr>
 <tr class="separator:a21883094138ac3de6c3f2c3523937235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -179,7 +188,7 @@ QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b>
 <p>Construct a new <a class="el" href="classGame.html" title="Main game class to controll events in the game.">Game</a>:: <a class="el" href="classGame.html" title="Main game class to controll events in the game.">Game</a> object. Crates and sets all the game components - scene, player, score, health, enemies, GUI. Also creates signals for enemy spawning, updating player position, updating player projectiles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>a parent widget </td></tr>
   </table>
   </dd>
 </dl>
@@ -187,8 +196,55 @@ QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a759ede70d6e7cb6db78eceb5c4603d9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a759ede70d6e7cb6db78eceb5c4603d9c">&#9670;&nbsp;</a></span>drawPanel()</h2>
+<a id="a60d93d3b7af946d169a53032d901316d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d93d3b7af946d169a53032d901316d">&#9670;&nbsp;</a></span>comboBoxChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::comboBoxChange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QComboBox &amp;&#160;</td>
+          <td class="paramname"><em>language</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae730058e66f3ed1290b20e78b531f004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae730058e66f3ed1290b20e78b531f004">&#9670;&nbsp;</a></span>drawGUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::drawGUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws all the GUI widgets - controller indicator circle, difficulty <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>, language <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>, and all the texts. </p>
+
+</div>
+</div>
+<a id="a7ff59209d4edf12c84266b9a6645a629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff59209d4edf12c84266b9a6645a629">&#9670;&nbsp;</a></span>drawPanel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,37 +252,37 @@ QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b>
         <tr>
           <td class="memname">void Game::drawPanel </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QColor&#160;</td>
+          <td class="paramtype">const QColor&#160;</td>
           <td class="paramname"><em>color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>opacity</em>&#160;</td>
         </tr>
         <tr>
@@ -240,15 +296,179 @@ QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b>
 <p>Creates GUI background panel wothout any widgets. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td></td></tr>
-    <tr><td class="paramname">y</td><td></td></tr>
-    <tr><td class="paramname">width</td><td></td></tr>
-    <tr><td class="paramname">height</td><td></td></tr>
-    <tr><td class="paramname">color</td><td></td></tr>
-    <tr><td class="paramname">opacity</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>GUI x posistion </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>GUI y position </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>GUI width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>GUI height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>GUI color </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opacity</td><td>GUI opacity </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5107ecf532a99e8e0dfcecd1d0b5b9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5107ecf532a99e8e0dfcecd1d0b5b9f5">&#9670;&nbsp;</a></span>resizeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helps scaling and rezising window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a786270db041794c82bd32be55a416688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a786270db041794c82bd32be55a416688">&#9670;&nbsp;</a></span>updateGraph</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::updateGraph </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a21883094138ac3de6c3f2c3523937235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21883094138ac3de6c3f2c3523937235">&#9670;&nbsp;</a></span>axises_plot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAxisPlot.html">AxisPlot</a>* Game::axises_plot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a151142ea1677dac2e2ddbaaa82e7569f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151142ea1677dac2e2ddbaaa82e7569f">&#9670;&nbsp;</a></span>difficulty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComboBoxTxt.html">ComboBoxTxt</a>* Game::difficulty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cfa8ef83412c73d759b3965804f42aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfa8ef83412c73d759b3965804f42aa">&#9670;&nbsp;</a></span>health</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHealth.html">Health</a>* Game::health</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2d569070e1bfd72a00ff659d13bdec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d569070e1bfd72a00ff659d13bdec0">&#9670;&nbsp;</a></span>language</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComboBoxTxt.html">ComboBoxTxt</a> * Game::language</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa35af834973e67352c46669757869a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35af834973e67352c46669757869a32">&#9670;&nbsp;</a></span>manager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classControllerManager.html">ControllerManager</a>* Game::manager</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abec70aa1c0269a9a7e171af4d79e08bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abec70aa1c0269a9a7e171af4d79e08bf">&#9670;&nbsp;</a></span>player</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPlayer.html">Player</a>* Game::player</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8119e3b9a632906c6808fa294b46a92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8119e3b9a632906c6808fa294b46a92a">&#9670;&nbsp;</a></span>scene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsScene* Game::scene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad195acc6b5ee17a5a07fea0b7b4ff5e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad195acc6b5ee17a5a07fea0b7b4ff5e2">&#9670;&nbsp;</a></span>score</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScore.html">Score</a>* Game::score</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -257,9 +477,13 @@ QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b>
 <li>/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/src/<a class="el" href="Game_8cpp.html">Game.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classGame.html">Game</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

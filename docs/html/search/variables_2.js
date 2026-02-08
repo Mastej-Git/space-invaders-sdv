@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['yaxis_324',['yAxis',['../classQCustomPlot.html#af6fea5679725b152c14facd920b19367',1,'QCustomPlot']]],
-  ['yaxis2_325',['yAxis2',['../classQCustomPlot.html#af13fdc5bce7d0fabd640f13ba805c0b7',1,'QCustomPlot']]]
+  ['difficulty_191',['difficulty',['../classGame.html#a151142ea1677dac2e2ddbaaa82e7569f',1,'Game']]]
 ];

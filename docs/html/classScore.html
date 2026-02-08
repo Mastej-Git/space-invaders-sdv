@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classScore.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,10 +81,11 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classScore-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Score Class Reference</div>  </div>
@@ -82,7 +104,7 @@ Inheritance diagram for Score:</div>
 <area shape="rect" title="Cyan text in upper left corner indicating player score points." alt="" coords="45,80,101,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,140,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Score:</div>
 <div class="dyncontent">
@@ -91,7 +113,7 @@ Collaboration diagram for Score:</div>
 <area shape="rect" title="Cyan text in upper left corner indicating player score points." alt="" coords="45,80,101,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,140,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -104,6 +126,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0edd6880a4747e9ec07751030bdd4689"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScore.html#a0edd6880a4747e9ec07751030bdd4689">get_score</a> ()</td></tr>
 <tr class="memdesc:a0edd6880a4747e9ec07751030bdd4689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets health points.  <a href="classScore.html#a0edd6880a4747e9ec07751030bdd4689">More...</a><br /></td></tr>
 <tr class="separator:a0edd6880a4747e9ec07751030bdd4689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a23bd669b5f6f265aa7ace8300a0ff3b1"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScore.html#a23bd669b5f6f265aa7ace8300a0ff3b1">language_ptr</a></td></tr>
+<tr class="separator:a23bd669b5f6f265aa7ace8300a0ff3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a331b0927105c83ba760954eff6cf9fe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScore.html#a331b0927105c83ba760954eff6cf9fe9">score</a></td></tr>
+<tr class="separator:a331b0927105c83ba760954eff6cf9fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Cyan text in upper left corner indicating player score points. </p>
@@ -127,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <p>Construct a new <a class="el" href="classScore.html" title="Cyan text in upper left corner indicating player score points.">Score</a>:: <a class="el" href="classScore.html" title="Cyan text in upper left corner indicating player score points.">Score</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -151,12 +183,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets health points. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">health</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>score points value </dd></dl>
 
 </div>
 </div>
@@ -176,7 +203,43 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns health number. </p>
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a23bd669b5f6f265aa7ace8300a0ff3b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23bd669b5f6f265aa7ace8300a0ff3b1">&#9670;&nbsp;</a></span>language_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* Score::language_ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a331b0927105c83ba760954eff6cf9fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331b0927105c83ba760954eff6cf9fe9">&#9670;&nbsp;</a></span>score</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Score::score</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -185,9 +248,13 @@ Public Member Functions</h2></td></tr>
 <li>/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/src/<a class="el" href="Score_8cpp.html">Score.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classScore.html">Score</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

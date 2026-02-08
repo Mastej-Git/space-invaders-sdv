@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['yaxis_1726',['yAxis',['../classQCustomPlot.html#af6fea5679725b152c14facd920b19367',1,'QCustomPlot']]],
-  ['yaxis2_1727',['yAxis2',['../classQCustomPlot.html#af13fdc5bce7d0fabd640f13ba805c0b7',1,'QCustomPlot']]]
+  ['game_192',['game',['../Bullet_8cpp.html#a58bdb5643d0814ac4e697a1564b79b70',1,'game():&#160;main.cpp'],['../Enemy_8cpp.html#a58bdb5643d0814ac4e697a1564b79b70',1,'game():&#160;main.cpp'],['../EnemyCyborg_8cpp.html#a58bdb5643d0814ac4e697a1564b79b70',1,'game():&#160;main.cpp'],['../EnemySentients_8cpp.html#a58bdb5643d0814ac4e697a1564b79b70',1,'game():&#160;main.cpp'],['../Flamethrower_8cpp.html#a58bdb5643d0814ac4e697a1564b79b70',1,'game():&#160;main.cpp'],['../Laser_8cpp.html#a58bdb5643d0814ac4e697a1564b79b70',1,'game():&#160;main.cpp'],['../main_8cpp.html#a58bdb5643d0814ac4e697a1564b79b70',1,'game():&#160;main.cpp']]],
+  ['gamepad_193',['gamepad',['../classPlayer.html#afde82258162241d92fd0a33f874f9032',1,'Player']]]
 ];

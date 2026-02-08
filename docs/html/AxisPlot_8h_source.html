@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('AxisPlot_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">AxisPlot.h</div>  </div>
@@ -80,24 +96,33 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classAxisPlot.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAxisPlot.html">AxisPlot</a> : <span class="keyword">public</span> QObject {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;Q_OBJECT</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classQCustomPlot.html">QCustomPlot</a> *plot;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classPlayer.html">Player</a> *player;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">double</span> time;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classAxisPlot.html#a1718b0693a04b14f456fa65356349c80">   25</a></span>&#160;    <a class="code" href="classQCustomPlot.html">QCustomPlot</a> *<a class="code" href="classAxisPlot.html#a1718b0693a04b14f456fa65356349c80">plot</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classAxisPlot.html#ae841928e6f94eaeca14a2f6e21507412">   26</a></span>&#160;    <a class="code" href="classPlayer.html">Player</a> *<a class="code" href="classAxisPlot.html#ae841928e6f94eaeca14a2f6e21507412">player</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classAxisPlot.html#ae5f48d9ad9f4e6183458ef9fb78b6279">   27</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classAxisPlot.html#ae5f48d9ad9f4e6183458ef9fb78b6279">time</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classAxisPlot.html">AxisPlot</a>(<a class="code" href="classPlayer.html">Player</a> *player);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classAxisPlot.html#a21336e8e5fcae3f4a30a74c958f3ee1c">AxisPlot</a>(<a class="code" href="classPlayer.html">Player</a> *<a class="code" href="classAxisPlot.html#ae841928e6f94eaeca14a2f6e21507412">player</a>);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> updateGraph();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classAxisPlot.html#a0bf6b850948ef9fc7627d80d3fac52e0">updateGraph</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AXISPLOT_H</span></div>
 <div class="ttc" id="aPlayer_8h_html"><div class="ttname"><a href="Player_8h.html">Player.h</a></div><div class="ttdoc">Player header file. Player is controllabe character that user can play. It can shot at move.</div></div>
 <div class="ttc" id="aclassAxisPlot_html"><div class="ttname"><a href="classAxisPlot.html">AxisPlot</a></div><div class="ttdoc">Uses qcustomplot to reprezent thumbstick axis info on a graph.</div><div class="ttdef"><b>Definition:</b> AxisPlot.h:22</div></div>
+<div class="ttc" id="aclassAxisPlot_html_a0bf6b850948ef9fc7627d80d3fac52e0"><div class="ttname"><a href="classAxisPlot.html#a0bf6b850948ef9fc7627d80d3fac52e0">AxisPlot::updateGraph</a></div><div class="ttdeci">void updateGraph()</div><div class="ttdoc">Public slot to update graphs, sets range, updates time.</div><div class="ttdef"><b>Definition:</b> AxisPlot.cpp:27</div></div>
+<div class="ttc" id="aclassAxisPlot_html_a1718b0693a04b14f456fa65356349c80"><div class="ttname"><a href="classAxisPlot.html#a1718b0693a04b14f456fa65356349c80">AxisPlot::plot</a></div><div class="ttdeci">QCustomPlot * plot</div><div class="ttdef"><b>Definition:</b> AxisPlot.h:25</div></div>
+<div class="ttc" id="aclassAxisPlot_html_a21336e8e5fcae3f4a30a74c958f3ee1c"><div class="ttname"><a href="classAxisPlot.html#a21336e8e5fcae3f4a30a74c958f3ee1c">AxisPlot::AxisPlot</a></div><div class="ttdeci">AxisPlot(Player *player)</div><div class="ttdoc">Construct a new Axis Plot:: Axis Plot object. Sets position, adds two graphs for both axies,...</div><div class="ttdef"><b>Definition:</b> AxisPlot.cpp:9</div></div>
+<div class="ttc" id="aclassAxisPlot_html_ae5f48d9ad9f4e6183458ef9fb78b6279"><div class="ttname"><a href="classAxisPlot.html#ae5f48d9ad9f4e6183458ef9fb78b6279">AxisPlot::time</a></div><div class="ttdeci">double time</div><div class="ttdef"><b>Definition:</b> AxisPlot.h:27</div></div>
+<div class="ttc" id="aclassAxisPlot_html_ae841928e6f94eaeca14a2f6e21507412"><div class="ttname"><a href="classAxisPlot.html#ae841928e6f94eaeca14a2f6e21507412">AxisPlot::player</a></div><div class="ttdeci">Player * player</div><div class="ttdef"><b>Definition:</b> AxisPlot.h:26</div></div>
 <div class="ttc" id="aclassPlayer_html"><div class="ttname"><a href="classPlayer.html">Player</a></div><div class="ttdoc">Main Player class to controll player and handle all events connectes to his movement.</div><div class="ttdef"><b>Definition:</b> Player.h:25</div></div>
 <div class="ttc" id="aclassQCustomPlot_html"><div class="ttname"><a href="classQCustomPlot.html">QCustomPlot</a></div><div class="ttdoc">The central class of the library. This is the QWidget which displays the plot and interacts with the ...</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="AxisPlot_8h.html">AxisPlot.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

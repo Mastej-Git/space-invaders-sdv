@@ -16,10 +16,11 @@
 /**
  * @brief Construct a new Score:: Score object
  * 
- * @param parent 
+ * @param[in] parent 
  */
 Score::Score(QGraphicsItem *parent): QGraphicsTextItem(parent) {
     this->score = 0;
+    this->language_ptr = nullptr;
 
     // draw the text
     setPlainText(QString("Score: ") + QString::number(this->score));
@@ -30,25 +31,22 @@ Score::Score(QGraphicsItem *parent): QGraphicsTextItem(parent) {
 /**
  * @brief Returns health number
  * 
- * @return int 
  */
 void Score::increase() {
     this->score += 10;
-    setPlainText(QString("Score: ") + QString::number(this->score));
+    if (*(this->language_ptr) == 0) {
+        setPlainText(QString("Score: ") + QString::number(this->score));
+    }
+    else {
+        setPlainText(QString("Punkty: ") + QString::number(this->score));
+    }
 }
 
 /**
  * @brief Sets health points
  * 
- * @param health 
+ * @return score points value
  */
 int Score::get_score() {
     return this->score;
 }
-
-//void Score::resizeEvent(QResizeEvent* event) {
-//        QGraphicsView::resizeEvent(event);
-//        QRect viewportRect = viewport()->rect();
-//        QPointF newPos = QGraphicsView::mapToScene(viewportRect.topLeft() + QPoint(10, 10)); // Adjust these coordinates as needed
-//        setPos(newPos);
-//    }

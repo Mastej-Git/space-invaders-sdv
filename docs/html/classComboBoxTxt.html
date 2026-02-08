@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classComboBoxTxt.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
@@ -84,7 +104,7 @@ Inheritance diagram for ComboBoxTxt:</div>
 <area shape="rect" title="ComboBox with Text. Used to change language and game difficulty." alt="" coords="5,80,112,107"/>
 <area shape="rect" title=" " alt="" coords="23,5,94,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for ComboBoxTxt:</div>
 <div class="dyncontent">
@@ -98,52 +118,45 @@ Collaboration diagram for ComboBoxTxt:</div>
 <area shape="rect" href="classScore.html" title="Cyan text in upper left corner indicating player score points." alt="" coords="318,81,374,108"/>
 <area shape="rect" title=" " alt="" coords="101,5,255,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:ad1dff9450e7f4eb75697d5bf344dd2d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#ad1dff9450e7f4eb75697d5bf344dd2d7">change_item</a> (int index)</td></tr>
+<tr class="memitem:ad1dff9450e7f4eb75697d5bf344dd2d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#ad1dff9450e7f4eb75697d5bf344dd2d7">change_item</a> (int <a class="el" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">index</a>)</td></tr>
 <tr class="memdesc:ad1dff9450e7f4eb75697d5bf344dd2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal function to obatin index of the chosen item from difficulty <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>.  <a href="classComboBoxTxt.html#ad1dff9450e7f4eb75697d5bf344dd2d7">More...</a><br /></td></tr>
 <tr class="separator:ad1dff9450e7f4eb75697d5bf344dd2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af69e9e56f658a52a2e7fb9da9e920e69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#af69e9e56f658a52a2e7fb9da9e920e69">change_language</a> (int index)</td></tr>
+<tr class="memitem:af69e9e56f658a52a2e7fb9da9e920e69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#af69e9e56f658a52a2e7fb9da9e920e69">change_language</a> (int <a class="el" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">index</a>)</td></tr>
 <tr class="memdesc:af69e9e56f658a52a2e7fb9da9e920e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal function to obatin index of the chosen item from language <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>.  <a href="classComboBoxTxt.html#af69e9e56f658a52a2e7fb9da9e920e69">More...</a><br /></td></tr>
 <tr class="separator:af69e9e56f658a52a2e7fb9da9e920e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4216995c861b1d0f1e4c2d84f50294e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#a4216995c861b1d0f1e4c2d84f50294e9">ComboBoxTxt</a> (QStringList list, QString text, int x, int y, <a class="el" href="classHealth.html">Health</a> *health, <a class="el" href="classScore.html">Score</a> *score, <a class="el" href="classPlayer.html">Player</a> *player, QGraphicsTextItem **texts_table)</td></tr>
-<tr class="memdesc:a4216995c861b1d0f1e4c2d84f50294e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Combo Box Txt:: Combo Box Txt object.  <a href="classComboBoxTxt.html#a4216995c861b1d0f1e4c2d84f50294e9">More...</a><br /></td></tr>
-<tr class="separator:a4216995c861b1d0f1e4c2d84f50294e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d38423b22d3a1819ff82075d03428e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#a17d38423b22d3a1819ff82075d03428e">ComboBoxTxt</a> (const QStringList &amp;list, const QString <a class="el" href="classComboBoxTxt.html#ab1e3698b0b7e5c14103263c3fbd06881">text</a>, const int x, const int y, <a class="el" href="classHealth.html">Health</a> *<a class="el" href="classComboBoxTxt.html#a8fd7ada78e8f8e5b0e8eb60866bed77a">health</a>, <a class="el" href="classScore.html">Score</a> *<a class="el" href="classComboBoxTxt.html#ad26f3c74cdb029495110877f6022b886">score</a>, <a class="el" href="classPlayer.html">Player</a> *<a class="el" href="classComboBoxTxt.html#ab816b7fc66a92d4900335f2ba46cb177">player</a>, QGraphicsTextItem **<a class="el" href="classComboBoxTxt.html#a5b10295a89ae647e77059c85826a7cfb">texts_table</a>)</td></tr>
+<tr class="memdesc:a17d38423b22d3a1819ff82075d03428e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Combo Box Txt:: Combo Box Txt object.  <a href="classComboBoxTxt.html#a17d38423b22d3a1819ff82075d03428e">More...</a><br /></td></tr>
+<tr class="separator:a17d38423b22d3a1819ff82075d03428e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a850d7e6e33699823274b3883db5d386a"><td class="memItemLeft" align="right" valign="top"><a id="a850d7e6e33699823274b3883db5d386a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>index</b></td></tr>
+<tr class="memitem:a850d7e6e33699823274b3883db5d386a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">index</a></td></tr>
 <tr class="separator:a850d7e6e33699823274b3883db5d386a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9beac6eef8001037ceb0556a6553e1d5"><td class="memItemLeft" align="right" valign="top"><a id="a9beac6eef8001037ceb0556a6553e1d5"></a>
-QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>combo_box</b></td></tr>
+<tr class="memitem:a9beac6eef8001037ceb0556a6553e1d5"><td class="memItemLeft" align="right" valign="top">QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#a9beac6eef8001037ceb0556a6553e1d5">combo_box</a></td></tr>
 <tr class="separator:a9beac6eef8001037ceb0556a6553e1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e3698b0b7e5c14103263c3fbd06881"><td class="memItemLeft" align="right" valign="top"><a id="ab1e3698b0b7e5c14103263c3fbd06881"></a>
-QGraphicsTextItem *&#160;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
+<tr class="memitem:ab1e3698b0b7e5c14103263c3fbd06881"><td class="memItemLeft" align="right" valign="top">QGraphicsTextItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#ab1e3698b0b7e5c14103263c3fbd06881">text</a></td></tr>
 <tr class="separator:ab1e3698b0b7e5c14103263c3fbd06881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd7ada78e8f8e5b0e8eb60866bed77a"><td class="memItemLeft" align="right" valign="top"><a id="a8fd7ada78e8f8e5b0e8eb60866bed77a"></a>
-<a class="el" href="classHealth.html">Health</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>health</b></td></tr>
+<tr class="memitem:a8fd7ada78e8f8e5b0e8eb60866bed77a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHealth.html">Health</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#a8fd7ada78e8f8e5b0e8eb60866bed77a">health</a></td></tr>
 <tr class="separator:a8fd7ada78e8f8e5b0e8eb60866bed77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad26f3c74cdb029495110877f6022b886"><td class="memItemLeft" align="right" valign="top"><a id="ad26f3c74cdb029495110877f6022b886"></a>
-<a class="el" href="classScore.html">Score</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>score</b></td></tr>
+<tr class="memitem:ad26f3c74cdb029495110877f6022b886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScore.html">Score</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#ad26f3c74cdb029495110877f6022b886">score</a></td></tr>
 <tr class="separator:ad26f3c74cdb029495110877f6022b886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab816b7fc66a92d4900335f2ba46cb177"><td class="memItemLeft" align="right" valign="top"><a id="ab816b7fc66a92d4900335f2ba46cb177"></a>
-<a class="el" href="classPlayer.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>player</b></td></tr>
+<tr class="memitem:ab816b7fc66a92d4900335f2ba46cb177"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlayer.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#ab816b7fc66a92d4900335f2ba46cb177">player</a></td></tr>
 <tr class="separator:ab816b7fc66a92d4900335f2ba46cb177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b10295a89ae647e77059c85826a7cfb"><td class="memItemLeft" align="right" valign="top"><a id="a5b10295a89ae647e77059c85826a7cfb"></a>
-QGraphicsTextItem **&#160;</td><td class="memItemRight" valign="bottom"><b>texts_table</b></td></tr>
+<tr class="memitem:a5b10295a89ae647e77059c85826a7cfb"><td class="memItemLeft" align="right" valign="top">QGraphicsTextItem **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComboBoxTxt.html#a5b10295a89ae647e77059c85826a7cfb">texts_table</a></td></tr>
 <tr class="separator:a5b10295a89ae647e77059c85826a7cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ComboBox with Text. Used to change language and game difficulty. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4216995c861b1d0f1e4c2d84f50294e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4216995c861b1d0f1e4c2d84f50294e9">&#9670;&nbsp;</a></span>ComboBoxTxt()</h2>
+<a id="a17d38423b22d3a1819ff82075d03428e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d38423b22d3a1819ff82075d03428e">&#9670;&nbsp;</a></span>ComboBoxTxt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,25 +164,25 @@ QGraphicsTextItem **&#160;</td><td class="memItemRight" valign="bottom"><b>texts
         <tr>
           <td class="memname">ComboBoxTxt::ComboBoxTxt </td>
           <td>(</td>
-          <td class="paramtype">QStringList&#160;</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
           <td class="paramname"><em>list</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QString&#160;</td>
+          <td class="paramtype">const QString&#160;</td>
           <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
@@ -207,12 +220,12 @@ QGraphicsTextItem **&#160;</td><td class="memItemRight" valign="bottom"><b>texts
 <p>Construct a new Combo Box Txt:: Combo Box Txt object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">list</td><td>List of object that should be contained by the ComboBox </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">text</td><td>Text Displayed above ComboBox </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">x</td><td>ComboBox x position </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">y</td><td>ComboBox y position </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>List of object that should be contained by the ComboBox </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Text Displayed above ComboBox </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>ComboBox x position </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>ComboBox y position </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">health</td><td><a class="el" href="classHealth.html" title="Red text in upper left corner indicating player health points.">Health</a> pointer to change the health points </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">player</td><td><a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a> pointer to return focus on the player character </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">player</td><td><a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a> pointer to return focus on the player character </td></tr>
   </table>
   </dd>
 </dl>
@@ -247,7 +260,7 @@ QGraphicsTextItem **&#160;</td><td class="memItemRight" valign="bottom"><b>texts
 <p>Signal function to obatin index of the chosen item from difficulty <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Index of the chosen item. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Index of the chosen item. </td></tr>
   </table>
   </dd>
 </dl>
@@ -281,10 +294,109 @@ QGraphicsTextItem **&#160;</td><td class="memItemRight" valign="bottom"><b>texts
 <p>Signal function to obatin index of the chosen item from language <a class="el" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty.">ComboBoxTxt</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>index of the chosen item. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>index of the chosen item. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9beac6eef8001037ceb0556a6553e1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9beac6eef8001037ceb0556a6553e1d5">&#9670;&nbsp;</a></span>combo_box</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QComboBox* ComboBoxTxt::combo_box</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fd7ada78e8f8e5b0e8eb60866bed77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd7ada78e8f8e5b0e8eb60866bed77a">&#9670;&nbsp;</a></span>health</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHealth.html">Health</a>* ComboBoxTxt::health</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a850d7e6e33699823274b3883db5d386a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850d7e6e33699823274b3883db5d386a">&#9670;&nbsp;</a></span>index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ComboBoxTxt::index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab816b7fc66a92d4900335f2ba46cb177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab816b7fc66a92d4900335f2ba46cb177">&#9670;&nbsp;</a></span>player</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPlayer.html">Player</a>* ComboBoxTxt::player</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad26f3c74cdb029495110877f6022b886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26f3c74cdb029495110877f6022b886">&#9670;&nbsp;</a></span>score</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScore.html">Score</a>* ComboBoxTxt::score</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1e3698b0b7e5c14103263c3fbd06881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1e3698b0b7e5c14103263c3fbd06881">&#9670;&nbsp;</a></span>text</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsTextItem* ComboBoxTxt::text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b10295a89ae647e77059c85826a7cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b10295a89ae647e77059c85826a7cfb">&#9670;&nbsp;</a></span>texts_table</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsTextItem** ComboBoxTxt::texts_table</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -293,9 +405,13 @@ QGraphicsTextItem **&#160;</td><td class="memItemRight" valign="bottom"><b>texts
 <li>/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/src/<a class="el" href="ComboBoxTxt_8cpp.html">ComboBoxTxt.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classComboBoxTxt.html">ComboBoxTxt</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

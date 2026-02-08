@@ -32,18 +32,21 @@ Collaboration diagram for Health\+:\nopagebreak
 \item 
 \mbox{\hyperlink{classHealth_af8daf3e4533a91b1987d2297dd765208}{Health}} (QGraphics\+Item $\ast$parent=0)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHealth}{Health}}\+:\+: \mbox{\hyperlink{classHealth}{Health}} object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classHealth_a15836492efb60f8c61151d35379768d2}\label{classHealth_a15836492efb60f8c61151d35379768d2}} 
 void \mbox{\hyperlink{classHealth_a15836492efb60f8c61151d35379768d2}{decrease}} ()
 \begin{DoxyCompactList}\small\item\em Decreases health when any enemy type touches the \mbox{\hyperlink{classPlayer}{Player}}. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classHealth_a8787851850f0046abd6ae90a50e72177}{get\+\_\+health}} ()
 \begin{DoxyCompactList}\small\item\em Returns health points. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classHealth_af306158f5cb22aa2ef417ae71ed1b1c2}{set\+\_\+heath}} (int health)
+void \mbox{\hyperlink{classHealth_af306158f5cb22aa2ef417ae71ed1b1c2}{set\+\_\+heath}} (int \mbox{\hyperlink{classHealth_a24ea36e28b6def54066e6164f97544b6}{health}})
 \begin{DoxyCompactList}\small\item\em Sets health points. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classHealth_af8ade6d724cd07af3dbcbb006d4dfdd5}\label{classHealth_af8ade6d724cd07af3dbcbb006d4dfdd5}} 
-int $\ast$ {\bfseries language\+\_\+ptr}
+int $\ast$ \mbox{\hyperlink{classHealth_af8ade6d724cd07af3dbcbb006d4dfdd5}{language\+\_\+ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classHealth_a24ea36e28b6def54066e6164f97544b6}{health}}
 \end{DoxyCompactItemize}
 
 
@@ -62,13 +65,23 @@ Red text in upper left corner indicating player health points.
 Construct a new \mbox{\hyperlink{classHealth}{Health}}\+:\+: \mbox{\hyperlink{classHealth}{Health}} object. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em parent} & \\
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em parent} & \\
 \hline
 \end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHealth_a15836492efb60f8c61151d35379768d2}\label{classHealth_a15836492efb60f8c61151d35379768d2}} 
+\index{Health@{Health}!decrease@{decrease}}
+\index{decrease@{decrease}!Health@{Health}}
+\doxysubsubsection{\texorpdfstring{decrease()}{decrease()}}
+{\footnotesize\ttfamily void Health\+::decrease (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decreases health when any enemy type touches the \mbox{\hyperlink{classPlayer}{Player}}. 
+
 \mbox{\Hypertarget{classHealth_a8787851850f0046abd6ae90a50e72177}\label{classHealth_a8787851850f0046abd6ae90a50e72177}} 
 \index{Health@{Health}!get\_health@{get\_health}}
 \index{get\_health@{get\_health}!Health@{Health}}
@@ -80,7 +93,7 @@ Construct a new \mbox{\hyperlink{classHealth}{Health}}\+:\+: \mbox{\hyperlink{cl
 Returns health points. 
 
 \begin{DoxyReturn}{Returns}
-int 
+int health points value 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classHealth_af306158f5cb22aa2ef417ae71ed1b1c2}\label{classHealth_af306158f5cb22aa2ef417ae71ed1b1c2}} 
 \index{Health@{Health}!set\_heath@{set\_heath}}
@@ -93,10 +106,25 @@ int
 Sets health points. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em health} & \\
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em health} & parameter to set \\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHealth_a24ea36e28b6def54066e6164f97544b6}\label{classHealth_a24ea36e28b6def54066e6164f97544b6}} 
+\index{Health@{Health}!health@{health}}
+\index{health@{health}!Health@{Health}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Health\+::health\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHealth_af8ade6d724cd07af3dbcbb006d4dfdd5}\label{classHealth_af8ade6d724cd07af3dbcbb006d4dfdd5}} 
+\index{Health@{Health}!language\_ptr@{language\_ptr}}
+\index{language\_ptr@{language\_ptr}!Health@{Health}}
+\doxysubsubsection{\texorpdfstring{language\_ptr}{language\_ptr}}
+{\footnotesize\ttfamily int$\ast$ Health\+::language\+\_\+ptr}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

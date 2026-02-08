@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,7 +82,17 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
+
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>axises_plot
+: <a class="el" href="classGame.html#a21883094138ac3de6c3f2c3523937235">Game</a>
+</li>
+<li>AxisPlot()
+: <a class="el" href="classAxisPlot.html#a21336e8e5fcae3f4a30a74c958f3ee1c">AxisPlot</a>
+</li>
+</ul>
+
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>Bullet()
@@ -78,8 +108,20 @@ $(function() {
 <li>change_language()
 : <a class="el" href="classComboBoxTxt.html#af69e9e56f658a52a2e7fb9da9e920e69">ComboBoxTxt</a>
 </li>
+<li>combo_box
+: <a class="el" href="classComboBoxTxt.html#a9beac6eef8001037ceb0556a6553e1d5">ComboBoxTxt</a>
+</li>
+<li>comboBoxChange()
+: <a class="el" href="classGame.html#a60d93d3b7af946d169a53032d901316d">Game</a>
+</li>
 <li>ComboBoxTxt()
-: <a class="el" href="classComboBoxTxt.html#a4216995c861b1d0f1e4c2d84f50294e9">ComboBoxTxt</a>
+: <a class="el" href="classComboBoxTxt.html#a17d38423b22d3a1819ff82075d03428e">ComboBoxTxt</a>
+</li>
+<li>controller_manager
+: <a class="el" href="classControllerManager.html#a6b61b914e43908674d4bd7e14e5b8c68">ControllerManager</a>
+</li>
+<li>ControllerManager()
+: <a class="el" href="classControllerManager.html#a55c19edade7396f014e34a3dea9d8425">ControllerManager</a>
 </li>
 </ul>
 
@@ -88,11 +130,14 @@ $(function() {
 <li>decrease()
 : <a class="el" href="classHealth.html#a15836492efb60f8c61151d35379768d2">Health</a>
 </li>
+<li>difficulty
+: <a class="el" href="classGame.html#a151142ea1677dac2e2ddbaaa82e7569f">Game</a>
+</li>
 <li>drawGUI()
 : <a class="el" href="classGame.html#ae730058e66f3ed1290b20e78b531f004">Game</a>
 </li>
 <li>drawPanel()
-: <a class="el" href="classGame.html#a759ede70d6e7cb6db78eceb5c4603d9c">Game</a>
+: <a class="el" href="classGame.html#a7ff59209d4edf12c84266b9a6645a629">Game</a>
 </li>
 </ul>
 
@@ -120,6 +165,12 @@ $(function() {
 <h3><a id="index_g"></a>- g -</h3><ul>
 <li>Game()
 : <a class="el" href="classGame.html#ae3c64a8dd73de0a99849db8ec0e9a86c">Game</a>
+</li>
+<li>gamepad
+: <a class="el" href="classPlayer.html#afde82258162241d92fd0a33f874f9032">Player</a>
+</li>
+<li>gamepadPressEvent()
+: <a class="el" href="classPlayer.html#ac8234bcfd8bef2b794c4022583de624c">Player</a>
 </li>
 <li>get_health()
 : <a class="el" href="classHealth.html#a8787851850f0046abd6ae90a50e72177">Health</a>
@@ -153,13 +204,20 @@ $(function() {
 : <a class="el" href="classPlayer.html#a2bf41ea319e337de5b7e3114d7a10c41">Player</a>
 </li>
 <li>handleXAxisLeftThumbstick()
-: <a class="el" href="classPlayer.html#acc8673f1114b6aaf800535896378d536">Player</a>
+: <a class="el" href="classPlayer.html#ac2d2711df46ba4b0de1892bd5ce98d90">Player</a>
 </li>
 <li>handleYAxisLeftThumbstick()
-: <a class="el" href="classPlayer.html#a3dda7a8ea82a23d3efdcdb5d93dbac46">Player</a>
+: <a class="el" href="classPlayer.html#a2da6c61142c1dc76fdbd93adb5654ab7">Player</a>
+</li>
+<li>health
+: <a class="el" href="classComboBoxTxt.html#a8fd7ada78e8f8e5b0e8eb60866bed77a">ComboBoxTxt</a>
+, <a class="el" href="classGame.html#a4cfa8ef83412c73d759b3965804f42aa">Game</a>
 </li>
 <li>Health()
 : <a class="el" href="classHealth.html#af8daf3e4533a91b1987d2297dd765208">Health</a>
+</li>
+<li>health
+: <a class="el" href="classHealth.html#a24ea36e28b6def54066e6164f97544b6">Health</a>
 </li>
 </ul>
 
@@ -168,20 +226,57 @@ $(function() {
 <li>increase()
 : <a class="el" href="classScore.html#ab5dbfab6935903c075509546878cfbda">Score</a>
 </li>
+<li>index
+: <a class="el" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">ComboBoxTxt</a>
+</li>
+<li>indicator
+: <a class="el" href="classControllerManager.html#a109b00472d2b8554cd887cdabcf00323">ControllerManager</a>
+</li>
+<li>is_controller_connected()
+: <a class="el" href="classControllerManager.html#afd5d22b04ab572fe2db52533727e023c">ControllerManager</a>
+</li>
 </ul>
 
 
 <h3><a id="index_k"></a>- k -</h3><ul>
+<li>keyDownPressed
+: <a class="el" href="classPlayer.html#af39e038f528fc8aa93f7ce05267785a0">Player</a>
+</li>
+<li>keyFlamePressed
+: <a class="el" href="classPlayer.html#a81ad4c1f199fb5587f63c673f3bb2bf7">Player</a>
+</li>
+<li>keyLaserPressed
+: <a class="el" href="classPlayer.html#a40208288c0efbb497fd55921955dfe2d">Player</a>
+</li>
+<li>keyLeftPressed
+: <a class="el" href="classPlayer.html#a23eeb68d978f0a63e4389e418d3836d4">Player</a>
+</li>
 <li>keyPressEvent()
 : <a class="el" href="classPlayer.html#a4d269c4118c29b0ee85c1e0f674260ee">Player</a>
 </li>
 <li>keyReleaseEvent()
 : <a class="el" href="classPlayer.html#a09f3d5dea93b5699138eba6f4f420b27">Player</a>
 </li>
+<li>keyRightPressed
+: <a class="el" href="classPlayer.html#afdb4cc8c0ba3b03456414d2e4c31c2b2">Player</a>
+</li>
+<li>keySpacebarPressed
+: <a class="el" href="classPlayer.html#a3e55eb3791b6007c066b1a2305eb7f7b">Player</a>
+</li>
+<li>keyUpPressed
+: <a class="el" href="classPlayer.html#a452d9a6c28fa5d5ed561208dbce8fdea">Player</a>
+</li>
 </ul>
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
+<li>language
+: <a class="el" href="classGame.html#ad2d569070e1bfd72a00ff659d13bdec0">Game</a>
+</li>
+<li>language_ptr
+: <a class="el" href="classHealth.html#af8ade6d724cd07af3dbcbb006d4dfdd5">Health</a>
+, <a class="el" href="classScore.html#a23bd669b5f6f265aa7ace8300a0ff3b1">Score</a>
+</li>
 <li>Laser()
 : <a class="el" href="classLaser.html#a68465e89283dffcc29a37e94693c6f87">Laser</a>
 </li>
@@ -189,6 +284,9 @@ $(function() {
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>manager
+: <a class="el" href="classGame.html#aa35af834973e67352c46669757869a32">Game</a>
+</li>
 <li>move()
 : <a class="el" href="classBullet.html#a6140db968c42c05e829e142f74f20b16">Bullet</a>
 , <a class="el" href="classEnemy.html#a9a398f8d12234f02563b27440aff7891">Enemy</a>
@@ -201,13 +299,36 @@ $(function() {
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
+<li>player
+: <a class="el" href="classAxisPlot.html#ae841928e6f94eaeca14a2f6e21507412">AxisPlot</a>
+, <a class="el" href="classComboBoxTxt.html#ab816b7fc66a92d4900335f2ba46cb177">ComboBoxTxt</a>
+, <a class="el" href="classGame.html#abec70aa1c0269a9a7e171af4d79e08bf">Game</a>
+</li>
 <li>Player()
 : <a class="el" href="classPlayer.html#a7256f06463cd0f3f84baca8307aa0086">Player</a>
+</li>
+<li>plot
+: <a class="el" href="classAxisPlot.html#a1718b0693a04b14f456fa65356349c80">AxisPlot</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>resizeEvent()
+: <a class="el" href="classGame.html#a5107ecf532a99e8e0dfcecd1d0b5b9f5">Game</a>
 </li>
 </ul>
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>scene
+: <a class="el" href="classGame.html#a8119e3b9a632906c6808fa294b46a92a">Game</a>
+</li>
+<li>score
+: <a class="el" href="classComboBoxTxt.html#ad26f3c74cdb029495110877f6022b886">ComboBoxTxt</a>
+, <a class="el" href="classGame.html#ad195acc6b5ee17a5a07fea0b7b4ff5e2">Game</a>
+, <a class="el" href="classScore.html#a331b0927105c83ba760954eff6cf9fe9">Score</a>
+</li>
 <li>Score()
 : <a class="el" href="classScore.html#af7c3392a27388a66b8a94448a995634d">Score</a>
 </li>
@@ -220,7 +341,24 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>text
+: <a class="el" href="classComboBoxTxt.html#ab1e3698b0b7e5c14103263c3fbd06881">ComboBoxTxt</a>
+</li>
+<li>texts_table
+: <a class="el" href="classComboBoxTxt.html#a5b10295a89ae647e77059c85826a7cfb">ComboBoxTxt</a>
+</li>
+<li>time
+: <a class="el" href="classAxisPlot.html#ae5f48d9ad9f4e6183458ef9fb78b6279">AxisPlot</a>
+</li>
+</ul>
+
+
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>updateGraph()
+: <a class="el" href="classAxisPlot.html#a0bf6b850948ef9fc7627d80d3fac52e0">AxisPlot</a>
+, <a class="el" href="classGame.html#a786270db041794c82bd32be55a416688">Game</a>
+</li>
 <li>updatePlayerBullets()
 : <a class="el" href="classPlayer.html#aabfc5a8cfd7fb8bbbc7a901d163da9d8">Player</a>
 </li>
@@ -228,10 +366,33 @@ $(function() {
 : <a class="el" href="classPlayer.html#ad48f687798a2245155d637b9fac6cda2">Player</a>
 </li>
 </ul>
+
+
+<h3><a id="index_x"></a>- x -</h3><ul>
+<li>x_move
+: <a class="el" href="classFlamethrower.html#a06fcd46026b33e85d3a6167af4fc3e06">Flamethrower</a>
+</li>
+<li>xAxisValue
+: <a class="el" href="classPlayer.html#aaa75644db58c9cd97e9e302bdfc056fc">Player</a>
+</li>
+</ul>
+
+
+<h3><a id="index_y"></a>- y -</h3><ul>
+<li>y_move
+: <a class="el" href="classFlamethrower.html#acdfd90630acfa90d678e86508af19367">Flamethrower</a>
+</li>
+<li>yAxisValue
+: <a class="el" href="classPlayer.html#aa0c45ce69ab9ad100b3363e71f100c6a">Player</a>
+</li>
+</ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -30,33 +30,80 @@ Collaboration diagram for Axis\+Plot\+:\nopagebreak
 \doxysubsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classAxisPlot_a0bf6b850948ef9fc7627d80d3fac52e0}\label{classAxisPlot_a0bf6b850948ef9fc7627d80d3fac52e0}} 
-void {\bfseries update\+Graph} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classAxisPlot_a0bf6b850948ef9fc7627d80d3fac52e0}{update\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em Public slot to update graphs, sets range, updates time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classAxisPlot_a21336e8e5fcae3f4a30a74c958f3ee1c}\label{classAxisPlot_a21336e8e5fcae3f4a30a74c958f3ee1c}} 
-{\bfseries Axis\+Plot} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classAxisPlot_a21336e8e5fcae3f4a30a74c958f3ee1c}{Axis\+Plot}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$\mbox{\hyperlink{classAxisPlot_ae841928e6f94eaeca14a2f6e21507412}{player}})
+\begin{DoxyCompactList}\small\item\em Construct a new Axis Plot\+:\+: Axis Plot object. Sets position, adds two graphs for both axies, plot range and colours. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classAxisPlot_a1718b0693a04b14f456fa65356349c80}\label{classAxisPlot_a1718b0693a04b14f456fa65356349c80}} 
-\mbox{\hyperlink{classQCustomPlot}{QCustom\+Plot}} $\ast$ {\bfseries plot}
+\mbox{\hyperlink{classQCustomPlot}{QCustom\+Plot}} $\ast$ \mbox{\hyperlink{classAxisPlot_a1718b0693a04b14f456fa65356349c80}{plot}}
 \item 
-\mbox{\Hypertarget{classAxisPlot_ae841928e6f94eaeca14a2f6e21507412}\label{classAxisPlot_ae841928e6f94eaeca14a2f6e21507412}} 
-\mbox{\hyperlink{classPlayer}{Player}} $\ast$ {\bfseries player}
+\mbox{\hyperlink{classPlayer}{Player}} $\ast$ \mbox{\hyperlink{classAxisPlot_ae841928e6f94eaeca14a2f6e21507412}{player}}
 \item 
-\mbox{\Hypertarget{classAxisPlot_ae5f48d9ad9f4e6183458ef9fb78b6279}\label{classAxisPlot_ae5f48d9ad9f4e6183458ef9fb78b6279}} 
-double {\bfseries time}
+double \mbox{\hyperlink{classAxisPlot_ae5f48d9ad9f4e6183458ef9fb78b6279}{time}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Uses qcustomplot to reprezent thumbstick axis info on a graph. 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAxisPlot_a21336e8e5fcae3f4a30a74c958f3ee1c}\label{classAxisPlot_a21336e8e5fcae3f4a30a74c958f3ee1c}} 
+\index{AxisPlot@{AxisPlot}!AxisPlot@{AxisPlot}}
+\index{AxisPlot@{AxisPlot}!AxisPlot@{AxisPlot}}
+\doxysubsubsection{\texorpdfstring{AxisPlot()}{AxisPlot()}}
+{\footnotesize\ttfamily Axis\+Plot\+::\+Axis\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Construct a new Axis Plot\+:\+: Axis Plot object. Sets position, adds two graphs for both axies, plot range and colours. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em player} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAxisPlot_a0bf6b850948ef9fc7627d80d3fac52e0}\label{classAxisPlot_a0bf6b850948ef9fc7627d80d3fac52e0}} 
+\index{AxisPlot@{AxisPlot}!updateGraph@{updateGraph}}
+\index{updateGraph@{updateGraph}!AxisPlot@{AxisPlot}}
+\doxysubsubsection{\texorpdfstring{updateGraph}{updateGraph}}
+{\footnotesize\ttfamily void Axis\+Plot\+::update\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Public slot to update graphs, sets range, updates time. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAxisPlot_ae841928e6f94eaeca14a2f6e21507412}\label{classAxisPlot_ae841928e6f94eaeca14a2f6e21507412}} 
+\index{AxisPlot@{AxisPlot}!player@{player}}
+\index{player@{player}!AxisPlot@{AxisPlot}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}}$\ast$ Axis\+Plot\+::player}
+
+\mbox{\Hypertarget{classAxisPlot_a1718b0693a04b14f456fa65356349c80}\label{classAxisPlot_a1718b0693a04b14f456fa65356349c80}} 
+\index{AxisPlot@{AxisPlot}!plot@{plot}}
+\index{plot@{plot}!AxisPlot@{AxisPlot}}
+\doxysubsubsection{\texorpdfstring{plot}{plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classQCustomPlot}{QCustom\+Plot}}$\ast$ Axis\+Plot\+::plot}
+
+\mbox{\Hypertarget{classAxisPlot_ae5f48d9ad9f4e6183458ef9fb78b6279}\label{classAxisPlot_ae5f48d9ad9f4e6183458ef9fb78b6279}} 
+\index{AxisPlot@{AxisPlot}!time@{time}}
+\index{time@{time}!AxisPlot@{AxisPlot}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily double Axis\+Plot\+::time}
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 /home/feniks/my\+\_\+ws/6sem/\+WDS/\+Space\+Invaders/\+Space\+Invaders/inc/\mbox{\hyperlink{AxisPlot_8h}{Axis\+Plot.\+h}}\item 
-/home/feniks/my\+\_\+ws/6sem/\+WDS/\+Space\+Invaders/\+Space\+Invaders/src/Axis\+Plot.\+cpp\end{DoxyCompactItemize}
+/home/feniks/my\+\_\+ws/6sem/\+WDS/\+Space\+Invaders/\+Space\+Invaders/src/\mbox{\hyperlink{AxisPlot_8cpp}{Axis\+Plot.\+cpp}}\end{DoxyCompactItemize}

@@ -1,5 +1,11 @@
 #include "../inc/AxisPlot.h"
 
+/**
+ * @brief Construct a new Axis Plot:: Axis Plot object. Sets position, adds two graphs for both axies, plot range and colours.
+ * 
+ * @param[in] player 
+ */
+
 AxisPlot::AxisPlot(Player *player) {
     this->plot = new QCustomPlot();
     this->plot->setGeometry(10, 10, 130, 180);
@@ -13,9 +19,13 @@ AxisPlot::AxisPlot(Player *player) {
     this->player = player;
 }
 
+/**
+ * @brief Public slot to update graphs, sets range, updates time.
+ * 
+ */
+
 void AxisPlot::updateGraph() {
     double key = time;
-    double value = qSin(2 * M_PI * key);
 
     this->plot->graph(0)->addData(key, this->player->xAxisValue);
     this->plot->graph(0)->data()->removeBefore(key - 10);

@@ -24,6 +24,8 @@ class Score: public QGraphicsTextItem {
 private:
     int score;
 public:
+    int *language_ptr;
+
     Score(QGraphicsItem *parent = 0);
     void increase();
     int get_score();

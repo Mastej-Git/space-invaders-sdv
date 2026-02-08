@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_vars.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,27 +82,163 @@ $(function() {
 </div>
 
 <div class="contents">
-&#160;<ul>
-<li>legend
-: <a class="el" href="classQCustomPlot.html#a4eadcd237dc6a09938b68b16877fa6af">QCustomPlot</a>
+&#160;
+
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>axises_plot
+: <a class="el" href="classGame.html#a21883094138ac3de6c3f2c3523937235">Game</a>
 </li>
-<li>xAxis
-: <a class="el" href="classQCustomPlot.html#a9a79cd0158a4c7f30cbc702f0fd800e4">QCustomPlot</a>
+</ul>
+
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>combo_box
+: <a class="el" href="classComboBoxTxt.html#a9beac6eef8001037ceb0556a6553e1d5">ComboBoxTxt</a>
 </li>
-<li>xAxis2
-: <a class="el" href="classQCustomPlot.html#ada41599f22cad901c030f3dcbdd82fd9">QCustomPlot</a>
+<li>controller_manager
+: <a class="el" href="classControllerManager.html#a6b61b914e43908674d4bd7e14e5b8c68">ControllerManager</a>
 </li>
-<li>yAxis
-: <a class="el" href="classQCustomPlot.html#af6fea5679725b152c14facd920b19367">QCustomPlot</a>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>difficulty
+: <a class="el" href="classGame.html#a151142ea1677dac2e2ddbaaa82e7569f">Game</a>
 </li>
-<li>yAxis2
-: <a class="el" href="classQCustomPlot.html#af13fdc5bce7d0fabd640f13ba805c0b7">QCustomPlot</a>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>gamepad
+: <a class="el" href="classPlayer.html#afde82258162241d92fd0a33f874f9032">Player</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>health
+: <a class="el" href="classComboBoxTxt.html#a8fd7ada78e8f8e5b0e8eb60866bed77a">ComboBoxTxt</a>
+, <a class="el" href="classGame.html#a4cfa8ef83412c73d759b3965804f42aa">Game</a>
+, <a class="el" href="classHealth.html#a24ea36e28b6def54066e6164f97544b6">Health</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>index
+: <a class="el" href="classComboBoxTxt.html#a850d7e6e33699823274b3883db5d386a">ComboBoxTxt</a>
+</li>
+<li>indicator
+: <a class="el" href="classControllerManager.html#a109b00472d2b8554cd887cdabcf00323">ControllerManager</a>
+</li>
+</ul>
+
+
+<h3><a id="index_k"></a>- k -</h3><ul>
+<li>keyDownPressed
+: <a class="el" href="classPlayer.html#af39e038f528fc8aa93f7ce05267785a0">Player</a>
+</li>
+<li>keyFlamePressed
+: <a class="el" href="classPlayer.html#a81ad4c1f199fb5587f63c673f3bb2bf7">Player</a>
+</li>
+<li>keyLaserPressed
+: <a class="el" href="classPlayer.html#a40208288c0efbb497fd55921955dfe2d">Player</a>
+</li>
+<li>keyLeftPressed
+: <a class="el" href="classPlayer.html#a23eeb68d978f0a63e4389e418d3836d4">Player</a>
+</li>
+<li>keyRightPressed
+: <a class="el" href="classPlayer.html#afdb4cc8c0ba3b03456414d2e4c31c2b2">Player</a>
+</li>
+<li>keySpacebarPressed
+: <a class="el" href="classPlayer.html#a3e55eb3791b6007c066b1a2305eb7f7b">Player</a>
+</li>
+<li>keyUpPressed
+: <a class="el" href="classPlayer.html#a452d9a6c28fa5d5ed561208dbce8fdea">Player</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>language
+: <a class="el" href="classGame.html#ad2d569070e1bfd72a00ff659d13bdec0">Game</a>
+</li>
+<li>language_ptr
+: <a class="el" href="classHealth.html#af8ade6d724cd07af3dbcbb006d4dfdd5">Health</a>
+, <a class="el" href="classScore.html#a23bd669b5f6f265aa7ace8300a0ff3b1">Score</a>
+</li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
+<li>manager
+: <a class="el" href="classGame.html#aa35af834973e67352c46669757869a32">Game</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>player
+: <a class="el" href="classAxisPlot.html#ae841928e6f94eaeca14a2f6e21507412">AxisPlot</a>
+, <a class="el" href="classComboBoxTxt.html#ab816b7fc66a92d4900335f2ba46cb177">ComboBoxTxt</a>
+, <a class="el" href="classGame.html#abec70aa1c0269a9a7e171af4d79e08bf">Game</a>
+</li>
+<li>plot
+: <a class="el" href="classAxisPlot.html#a1718b0693a04b14f456fa65356349c80">AxisPlot</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>scene
+: <a class="el" href="classGame.html#a8119e3b9a632906c6808fa294b46a92a">Game</a>
+</li>
+<li>score
+: <a class="el" href="classComboBoxTxt.html#ad26f3c74cdb029495110877f6022b886">ComboBoxTxt</a>
+, <a class="el" href="classGame.html#ad195acc6b5ee17a5a07fea0b7b4ff5e2">Game</a>
+, <a class="el" href="classScore.html#a331b0927105c83ba760954eff6cf9fe9">Score</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>text
+: <a class="el" href="classComboBoxTxt.html#ab1e3698b0b7e5c14103263c3fbd06881">ComboBoxTxt</a>
+</li>
+<li>texts_table
+: <a class="el" href="classComboBoxTxt.html#a5b10295a89ae647e77059c85826a7cfb">ComboBoxTxt</a>
+</li>
+<li>time
+: <a class="el" href="classAxisPlot.html#ae5f48d9ad9f4e6183458ef9fb78b6279">AxisPlot</a>
+</li>
+</ul>
+
+
+<h3><a id="index_x"></a>- x -</h3><ul>
+<li>x_move
+: <a class="el" href="classFlamethrower.html#a06fcd46026b33e85d3a6167af4fc3e06">Flamethrower</a>
+</li>
+<li>xAxisValue
+: <a class="el" href="classPlayer.html#aaa75644db58c9cd97e9e302bdfc056fc">Player</a>
+</li>
+</ul>
+
+
+<h3><a id="index_y"></a>- y -</h3><ul>
+<li>y_move
+: <a class="el" href="classFlamethrower.html#acdfd90630acfa90d678e86508af19367">Flamethrower</a>
+</li>
+<li>yAxisValue
+: <a class="el" href="classPlayer.html#aa0c45ce69ab9ad100b3363e71f100c6a">Player</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

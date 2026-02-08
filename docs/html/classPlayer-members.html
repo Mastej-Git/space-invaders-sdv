@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classPlayer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Player Member List</div>  </div>
@@ -69,8 +89,8 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classPlayer.html">Player</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>gamepad</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>gamepadPressEvent</b>() (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#afde82258162241d92fd0a33f874f9032">gamepad</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPlayer.html#ac8234bcfd8bef2b794c4022583de624c">gamepadPressEvent</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a3810beeebacf4d530a75f64d3da3d6f0">handleButtonDownChange</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="classPlayer.html#a82a1bd000dacf0c0cd4c389747ba661f">handleButtonLeftChange</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a5ebd13c8d0a8093b6f7580e454a9177f">handleButtonRightChange</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
@@ -78,27 +98,30 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a98f3c4a95c8bf772358557071f82aa16">handleButtonTrChange</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="classPlayer.html#acc72d1a19d8bec9abc1814dc99c42cb6">handleButtonUpChange</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a2bf41ea319e337de5b7e3114d7a10c41">handleButtonXChange</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classPlayer.html#acc8673f1114b6aaf800535896378d536">handleXAxisLeftThumbstick</a>(double value)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a3dda7a8ea82a23d3efdcdb5d93dbac46">handleYAxisLeftThumbstick</a>(double value)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>keyDownPressed</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>keyFlamePressed</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>keyLaserPressed</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>keyLeftPressed</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPlayer.html#ac2d2711df46ba4b0de1892bd5ce98d90">handleXAxisLeftThumbstick</a>(const double value)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a2da6c61142c1dc76fdbd93adb5654ab7">handleYAxisLeftThumbstick</a>(const double value)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPlayer.html#af39e038f528fc8aa93f7ce05267785a0">keyDownPressed</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a81ad4c1f199fb5587f63c673f3bb2bf7">keyFlamePressed</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPlayer.html#a40208288c0efbb497fd55921955dfe2d">keyLaserPressed</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a23eeb68d978f0a63e4389e418d3836d4">keyLeftPressed</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPlayer.html#a4d269c4118c29b0ee85c1e0f674260ee">keyPressEvent</a>(QKeyEvent *event)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a09f3d5dea93b5699138eba6f4f420b27">keyReleaseEvent</a>(QKeyEvent *event)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>keyRightPressed</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>keySpacebarPressed</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>keyUpPressed</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPlayer.html#afdb4cc8c0ba3b03456414d2e4c31c2b2">keyRightPressed</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a3e55eb3791b6007c066b1a2305eb7f7b">keySpacebarPressed</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPlayer.html#a452d9a6c28fa5d5ed561208dbce8fdea">keyUpPressed</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#a7256f06463cd0f3f84baca8307aa0086">Player</a>(QGamepad *gamepad)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPlayer.html#a59ae3f2c7151032a85e58b1591cad769">spawn</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#aabfc5a8cfd7fb8bbbc7a901d163da9d8">updatePlayerBullets</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="classPlayer.html#ad48f687798a2245155d637b9fac6cda2">updatePlayerPosition</a>()</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>xAxisValue</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>yAxisValue</b> (defined in <a class="el" href="classPlayer.html">Player</a>)</td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPlayer.html#aaa75644db58c9cd97e9e302bdfc056fc">xAxisValue</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPlayer.html#aa0c45ce69ab9ad100b3363e71f100c6a">yAxisValue</a></td><td class="entry"><a class="el" href="classPlayer.html">Player</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

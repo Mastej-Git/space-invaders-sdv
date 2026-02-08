@@ -12,19 +12,20 @@
 #ifndef FLAMETHROWER_H
 #define FLAMETHROWER_H
 
-#include <QGraphicsRectItem>
 #include <QObject>
+#include <QGraphicsPixmapItem>
 
 /**
  * @brief Second weapon type that Player can use to eliminate enemies. Works on Enemy.
  * 
  */
 
-class Flamethrower : public QObject, public QGraphicsRectItem {
+class Flamethrower : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     double x_move;
     double y_move;
+    int time;
 
     Flamethrower(double x_move, double y_move);
 public slots:

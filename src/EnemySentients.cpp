@@ -30,7 +30,10 @@ EnemySentients::EnemySentients() {
     int rand_numb = rand() % 700;
     setPos(rand_numb, 0);
 
-    setRect(0, 0, 120, 80);
+//    setRect(0, 0, 120, 80);
+    this->setPixmap(QPixmap(":/images/enemy_sentient.png"));
+    this->setTransformOriginPoint(50, 50);
+    this->setRotation(180);
 
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(move()));

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['updateplayerbullets_137',['updatePlayerBullets',['../classPlayer.html#aabfc5a8cfd7fb8bbbc7a901d163da9d8',1,'Player']]],
-  ['updateplayerposition_138',['updatePlayerPosition',['../classPlayer.html#ad48f687798a2245155d637b9fac6cda2',1,'Player']]]
+  ['resizeevent_181',['resizeEvent',['../classGame.html#a5107ecf532a99e8e0dfcecd1d0b5b9f5',1,'Game']]]
 ];

@@ -1,9 +1,10 @@
 <map id="/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/inc/Player.h" name="/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/inc/Player.h">
-<area shape="rect" id="node1" title="Player header file. Player is controllabe character that user can play. It can shot at move." alt="" coords="1021,5,1206,61"/>
-<area shape="rect" id="node2" href="$AxisPlot_8h.html" title="AxisPlot header file. Plot widget using qcustomplot for thumbstick axis data." alt="" coords="801,109,999,165"/>
+<area shape="rect" id="node1" title="Player header file. Player is controllabe character that user can play. It can shot at move." alt="" coords="977,5,1162,61"/>
+<area shape="rect" id="node2" href="$AxisPlot_8h.html" title="AxisPlot header file. Plot widget using qcustomplot for thumbstick axis data." alt="" coords="757,109,955,165"/>
 <area shape="rect" id="node3" href="$Game_8h.html" title="Game header file. Game is main class in which game tooks place." alt="" coords="899,213,1085,269"/>
-<area shape="rect" id="node12" href="$ComboBoxTxt_8h.html" title="ComboBoxTxt header file. ComboBox with text above it for brief desription." alt="" coords="1074,109,1307,165"/>
-<area shape="rect" id="node14" href="$Player_8cpp.html" title="Player source file. Contains code for all the functions from header file." alt="" coords="1332,109,1532,165"/>
+<area shape="rect" id="node13" href="$ComboBoxTxt_8h.html" title="ComboBoxTxt header file. ComboBox with text above it for brief desription." alt="" coords="1030,109,1263,165"/>
+<area shape="rect" id="node15" href="$Player_8cpp.html" title="Player source file. Contains code for all the functions from header file." alt="" coords="1288,109,1488,165"/>
+<area shape="rect" id="node12" href="$AxisPlot_8cpp.html" title=" " alt="" coords="661,213,875,269"/>
 <area shape="rect" id="node4" href="$Bullet_8cpp.html" title="Source file for Bullet funtions. Contains constructor and move function." alt="" coords="5,317,203,373"/>
 <area shape="rect" id="node5" href="$Enemy_8cpp.html" title="Enemy source file. Contains constructor and move function." alt="" coords="227,317,429,373"/>
 <area shape="rect" id="node6" href="$EnemyCyborg_8cpp.html" title="EnemyCyborg source file. Contains code for all the functions from header file." alt="" coords="454,317,701,373"/>
@@ -12,5 +13,5 @@
 <area shape="rect" id="node9" href="$Game_8cpp.html" title="Game source file. Contains code for all the functions from header file." alt="" coords="1277,317,1475,373"/>
 <area shape="rect" id="node10" href="$Laser_8cpp.html" title="Laser weapon source file. Contains code for all the functions from header file." alt="" coords="1500,317,1695,373"/>
 <area shape="rect" id="node11" href="$main_8cpp.html" title="Main running Game class." alt="" coords="1719,317,1911,373"/>
-<area shape="rect" id="node13" href="$ComboBoxTxt_8cpp.html" title="ComboBoxTxt source file. Contains contructor, change_item and change_language slots." alt="" coords="1109,213,1357,269"/>
+<area shape="rect" id="node14" href="$ComboBoxTxt_8cpp.html" title="ComboBoxTxt source file. Contains contructor, change_item and change_language slots." alt="" coords="1109,213,1357,269"/>
 </map>

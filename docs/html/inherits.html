@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,34 +89,34 @@ $(function() {
 <div class="textblock">
 <p><a href="hierarchy.html">Go to the textual class hierarchy</a></p>
 </div><table border="0" cellspacing="10" cellpadding="0">
-<tr><td><img src="inherit_graph_0.png" border="0" usemap="#aGame" alt=""/>
+<tr><td><img src="inherit_graph_0.png" border="0" usemap="#aFlamethrower" alt=""/>
+<map name="aFlamethrower" id="aFlamethrower">
+<area shape="rect" title=" " alt="" coords="5,31,160,57"/>
+<area shape="rect" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy." alt="" coords="221,5,323,32"/>
+<area shape="rect" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement." alt="" coords="243,56,301,83"/>
+<area shape="rect" title=" " alt="" coords="13,208,152,235"/>
+<area shape="rect" href="classBullet.html" title="Basic projectile type to shot enemies. Works against EnemyCyborg." alt="" coords="245,157,299,184"/>
+<area shape="rect" href="classEnemy.html" title="Basic enemy type that player has to eliminate. Is weak to Flamethrower weapon." alt="" coords="241,208,303,235"/>
+<area shape="rect" href="classEnemyCyborg.html" title="Second enemy type that Player has to eliminate. Is weak to Bullet projectile." alt="" coords="219,259,325,285"/>
+<area shape="rect" href="classEnemySentients.html" title="Third enemy type that Player has to eliminate. Is weak to Laser weapon." alt="" coords="213,309,331,336"/>
+<area shape="rect" href="classLaser.html" title="Third weapon type that Player can use to eliminate enemies. Works against EnemySentients." alt="" coords="245,107,299,133"/>
+<area shape="rect" title=" " alt="" coords="47,259,118,285"/>
+<area shape="rect" href="classAxisPlot.html" title="Uses qcustomplot to reprezent thumbstick axis info on a graph." alt="" coords="237,360,307,387"/>
+<area shape="rect" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty." alt="" coords="219,411,325,437"/>
+<area shape="rect" href="classControllerManager.html" title="Circular indicator of controller conection in upper right corner." alt="" coords="208,461,336,488"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_1.png" border="0" usemap="#aGame" alt=""/>
 <map name="aGame" id="aGame">
 <area shape="rect" title=" " alt="" coords="5,5,119,32"/>
 <area shape="rect" href="classGame.html" title="Main game class to controll events in the game." alt="" coords="167,5,224,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" usemap="#aHealth" alt=""/>
+<tr><td><img src="inherit_graph_2.png" border="0" usemap="#aHealth" alt=""/>
 <map name="aHealth" id="aHealth">
 <area shape="rect" title=" " alt="" coords="5,31,140,57"/>
 <area shape="rect" href="classHealth.html" title="Red text in upper left corner indicating player health points." alt="" coords="188,5,248,32"/>
 <area shape="rect" href="classScore.html" title="Cyan text in upper left corner indicating player score points." alt="" coords="190,56,246,83"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" usemap="#aPlayer" alt=""/>
-<map name="aPlayer" id="aPlayer">
-<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
-<area shape="rect" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement." alt="" coords="243,5,301,32"/>
-<area shape="rect" title=" " alt="" coords="13,169,152,196"/>
-<area shape="rect" href="classBullet.html" title="Basic projectile type to shot enemies. Works against EnemyCyborg." alt="" coords="245,56,299,83"/>
-<area shape="rect" href="classEnemy.html" title="Basic enemy type that player has to eliminate. Is weak to Flamethrower weapon." alt="" coords="241,107,303,133"/>
-<area shape="rect" href="classEnemyCyborg.html" title="Second enemy type that Player has to eliminate. Is weak to Bullet projectile." alt="" coords="219,157,325,184"/>
-<area shape="rect" href="classEnemySentients.html" title="Third enemy type that Player has to eliminate. Is weak to Laser weapon." alt="" coords="213,208,331,235"/>
-<area shape="rect" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy." alt="" coords="221,259,323,285"/>
-<area shape="rect" href="classLaser.html" title="Third weapon type that Player can use to eliminate enemies. Works against EnemySentients." alt="" coords="245,309,299,336"/>
-<area shape="rect" title=" " alt="" coords="47,233,118,260"/>
-<area shape="rect" href="classAxisPlot.html" title="Uses qcustomplot to reprezent thumbstick axis info on a graph." alt="" coords="237,360,307,387"/>
-<area shape="rect" href="classComboBoxTxt.html" title="ComboBox with Text. Used to change language and game difficulty." alt="" coords="219,411,325,437"/>
-<area shape="rect" href="classControllerManager.html" title="Circular indicator of controller conection in upper right corner." alt="" coords="208,461,336,488"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_3.png" border="0" usemap="#aQCustomPlot" alt=""/>
@@ -106,9 +126,12 @@ $(function() {
 </td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

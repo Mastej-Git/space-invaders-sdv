@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/images">
-        <file>player_ship.png</file>
+        <file alias="player_ship.png">graphics/pixmaps/player_ship.png</file>
+        <file alias="flame.png">graphics/pixmaps/flame.png</file>
+        <file alias="bullet.png">graphics/pixmaps/bullet.png</file>
+        <file alias="enemy_sentient.png">graphics/pixmaps/enemy_sentient.png</file>
+        <file alias="enemy_cyborg.png">graphics/pixmaps/enemy_cyborg.png</file>
+        <file alias="enemy.png">graphics/pixmaps/enemy.png</file>
     </qresource>
+    <qresource prefix="/language"/>
 </RCC>

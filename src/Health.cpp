@@ -16,7 +16,7 @@
 /**
  * @brief Construct a new Health:: Health object
  * 
- * @param parent 
+ * @param[in] parent 
  */
 Health::Health(QGraphicsItem *parent): QGraphicsTextItem(parent) {
     this->health = 5;
@@ -46,7 +46,7 @@ void Health::decrease() {
 /**
  * @brief Returns health points
  * 
- * @return int 
+ * @return int health points value
  */
 int Health::get_health() {
     return this->health;
@@ -55,7 +55,7 @@ int Health::get_health() {
 /**
  * @brief Sets health points
  * 
- * @param health 
+ * @param[out] health parameter to set
  */
 void Health::set_heath(int health) {
     this->health = health;

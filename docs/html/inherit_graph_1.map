@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,140,57"/>
-<area shape="rect" id="node2" href="$classHealth.html" title="Red text in upper left corner indicating player health points." alt="" coords="188,5,248,32"/>
-<area shape="rect" id="node3" href="$classScore.html" title="Cyan text in upper left corner indicating player score points." alt="" coords="190,56,246,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node2" href="$classGame.html" title="Main game class to controll events in the game." alt="" coords="167,5,224,32"/>
 </map>

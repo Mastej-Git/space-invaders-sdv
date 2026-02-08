@@ -22,14 +22,21 @@ extern Game *game;
 /**
  * @brief Construct a new Flamethrower:: Flamethrower object
  * 
- * @param x_move describes which way should the Flamethrower particle go on X axis
- * @param y_move describes which way should the Flamethrower particle go on Y axis
+ * @param[in] x_move describes which way should the Flamethrower particle go on X axis
+ * @param[in] y_move describes which way should the Flamethrower particle go on Y axis
  */
-Flamethrower::Flamethrower(double x_move, double y_move) {
-    setRect(50 - rect().width()/2, 0, 10, 10);
+Flamethrower::Flamethrower(const double x_move, const double y_move) {
+    setPixmap(QPixmap(":/images/flame.png"));
+//    setRect(50 - rect().width()/2, 0, 10, 10);
+//    setPos(45, 0);
 
+/**
+ * @brief Assigns the pixmap, position and timer
+ * 
+ */
     this->x_move = x_move;
     this->y_move = y_move;
+    this->time = 0;
 
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(move()));
@@ -67,7 +74,13 @@ void Flamethrower::move() {
     }
 
     setPos(x() + this->x_move, y() + this->y_move);
-    if (pos().y() + rect().height() < 0 || pos().y() > 600 || pos().x() + rect().width() < 0 || pos().x() > 800) {
+    if (pos().y() + 10 < 0 || pos().y() > 600 || pos().x() + 10 < 0 || pos().x() > 800) {
+        scene()->removeItem(this);
+        delete this;
+    }
+
+    this->time += 50;
+    if(this->time == 1200){
         scene()->removeItem(this);
         delete this;
     }

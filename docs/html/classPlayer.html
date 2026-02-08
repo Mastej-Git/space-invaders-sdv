@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classPlayer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
@@ -85,7 +105,7 @@ Inheritance diagram for Player:</div>
 <area shape="rect" title=" " alt="" coords="5,5,76,32"/>
 <area shape="rect" title=" " alt="" coords="101,5,255,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Player:</div>
 <div class="dyncontent">
@@ -95,62 +115,51 @@ Collaboration diagram for Player:</div>
 <area shape="rect" title=" " alt="" coords="5,5,76,32"/>
 <area shape="rect" title=" " alt="" coords="101,5,255,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a59ae3f2c7151032a85e58b1591cad769"><td class="memItemLeft" align="right" valign="top"><a id="a59ae3f2c7151032a85e58b1591cad769"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a59ae3f2c7151032a85e58b1591cad769">spawn</a> ()</td></tr>
-<tr class="memdesc:a59ae3f2c7151032a85e58b1591cad769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot position to spawn all the enemy types. <br /></td></tr>
+<tr class="memitem:a59ae3f2c7151032a85e58b1591cad769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a59ae3f2c7151032a85e58b1591cad769">spawn</a> ()</td></tr>
+<tr class="memdesc:a59ae3f2c7151032a85e58b1591cad769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot position to spawn all the enemy types.  <a href="classPlayer.html#a59ae3f2c7151032a85e58b1591cad769">More...</a><br /></td></tr>
 <tr class="separator:a59ae3f2c7151032a85e58b1591cad769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad48f687798a2245155d637b9fac6cda2"><td class="memItemLeft" align="right" valign="top"><a id="ad48f687798a2245155d637b9fac6cda2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ad48f687798a2245155d637b9fac6cda2">updatePlayerPosition</a> ()</td></tr>
-<tr class="memdesc:ad48f687798a2245155d637b9fac6cda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot function to move the <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a>. <br /></td></tr>
+<tr class="memitem:ad48f687798a2245155d637b9fac6cda2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ad48f687798a2245155d637b9fac6cda2">updatePlayerPosition</a> ()</td></tr>
+<tr class="memdesc:ad48f687798a2245155d637b9fac6cda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot function to move the <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a>.  <a href="classPlayer.html#ad48f687798a2245155d637b9fac6cda2">More...</a><br /></td></tr>
 <tr class="separator:ad48f687798a2245155d637b9fac6cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabfc5a8cfd7fb8bbbc7a901d163da9d8"><td class="memItemLeft" align="right" valign="top"><a id="aabfc5a8cfd7fb8bbbc7a901d163da9d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aabfc5a8cfd7fb8bbbc7a901d163da9d8">updatePlayerBullets</a> ()</td></tr>
-<tr class="memdesc:aabfc5a8cfd7fb8bbbc7a901d163da9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot function to move the bullets. <br /></td></tr>
+<tr class="memitem:aabfc5a8cfd7fb8bbbc7a901d163da9d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aabfc5a8cfd7fb8bbbc7a901d163da9d8">updatePlayerBullets</a> ()</td></tr>
+<tr class="memdesc:aabfc5a8cfd7fb8bbbc7a901d163da9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot function to move the bullets.  <a href="classPlayer.html#aabfc5a8cfd7fb8bbbc7a901d163da9d8">More...</a><br /></td></tr>
 <tr class="separator:aabfc5a8cfd7fb8bbbc7a901d163da9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a1bd000dacf0c0cd4c389747ba661f"><td class="memItemLeft" align="right" valign="top"><a id="a82a1bd000dacf0c0cd4c389747ba661f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a82a1bd000dacf0c0cd4c389747ba661f">handleButtonLeftChange</a> ()</td></tr>
-<tr class="memdesc:a82a1bd000dacf0c0cd4c389747ba661f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a82a1bd000dacf0c0cd4c389747ba661f" title="Player::handleButtonLeftChange Signal to change the Left controll state (true/false)">Player::handleButtonLeftChange</a> Signal to change the Left controll state (true/false) <br /></td></tr>
+<tr class="memitem:a82a1bd000dacf0c0cd4c389747ba661f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a82a1bd000dacf0c0cd4c389747ba661f">handleButtonLeftChange</a> ()</td></tr>
+<tr class="memdesc:a82a1bd000dacf0c0cd4c389747ba661f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a82a1bd000dacf0c0cd4c389747ba661f" title="Player::handleButtonLeftChange Signal to change the Left controll state (true/false)">Player::handleButtonLeftChange</a> Signal to change the Left controll state (true/false)  <a href="classPlayer.html#a82a1bd000dacf0c0cd4c389747ba661f">More...</a><br /></td></tr>
 <tr class="separator:a82a1bd000dacf0c0cd4c389747ba661f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ebd13c8d0a8093b6f7580e454a9177f"><td class="memItemLeft" align="right" valign="top"><a id="a5ebd13c8d0a8093b6f7580e454a9177f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a5ebd13c8d0a8093b6f7580e454a9177f">handleButtonRightChange</a> ()</td></tr>
-<tr class="memdesc:a5ebd13c8d0a8093b6f7580e454a9177f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a5ebd13c8d0a8093b6f7580e454a9177f" title="Player::handleButtonRightChange Signal to change the Right controll state (true/false)">Player::handleButtonRightChange</a> Signal to change the Right controll state (true/false) <br /></td></tr>
+<tr class="memitem:a5ebd13c8d0a8093b6f7580e454a9177f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a5ebd13c8d0a8093b6f7580e454a9177f">handleButtonRightChange</a> ()</td></tr>
+<tr class="memdesc:a5ebd13c8d0a8093b6f7580e454a9177f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a5ebd13c8d0a8093b6f7580e454a9177f" title="Player::handleButtonRightChange Signal to change the Right controll state (true/false)">Player::handleButtonRightChange</a> Signal to change the Right controll state (true/false)  <a href="classPlayer.html#a5ebd13c8d0a8093b6f7580e454a9177f">More...</a><br /></td></tr>
 <tr class="separator:a5ebd13c8d0a8093b6f7580e454a9177f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc72d1a19d8bec9abc1814dc99c42cb6"><td class="memItemLeft" align="right" valign="top"><a id="acc72d1a19d8bec9abc1814dc99c42cb6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#acc72d1a19d8bec9abc1814dc99c42cb6">handleButtonUpChange</a> ()</td></tr>
-<tr class="memdesc:acc72d1a19d8bec9abc1814dc99c42cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#acc72d1a19d8bec9abc1814dc99c42cb6" title="Player::handleButtonUpChange Signal to change the Up controll state (true/false)">Player::handleButtonUpChange</a> Signal to change the Up controll state (true/false) <br /></td></tr>
+<tr class="memitem:acc72d1a19d8bec9abc1814dc99c42cb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#acc72d1a19d8bec9abc1814dc99c42cb6">handleButtonUpChange</a> ()</td></tr>
+<tr class="memdesc:acc72d1a19d8bec9abc1814dc99c42cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#acc72d1a19d8bec9abc1814dc99c42cb6" title="Player::handleButtonUpChange Signal to change the Up controll state (true/false)">Player::handleButtonUpChange</a> Signal to change the Up controll state (true/false)  <a href="classPlayer.html#acc72d1a19d8bec9abc1814dc99c42cb6">More...</a><br /></td></tr>
 <tr class="separator:acc72d1a19d8bec9abc1814dc99c42cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3810beeebacf4d530a75f64d3da3d6f0"><td class="memItemLeft" align="right" valign="top"><a id="a3810beeebacf4d530a75f64d3da3d6f0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a3810beeebacf4d530a75f64d3da3d6f0">handleButtonDownChange</a> ()</td></tr>
-<tr class="memdesc:a3810beeebacf4d530a75f64d3da3d6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a3810beeebacf4d530a75f64d3da3d6f0" title="Player::handleButtonDownChange Signal to change the Down controll state (true/false)">Player::handleButtonDownChange</a> Signal to change the Down controll state (true/false) <br /></td></tr>
+<tr class="memitem:a3810beeebacf4d530a75f64d3da3d6f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a3810beeebacf4d530a75f64d3da3d6f0">handleButtonDownChange</a> ()</td></tr>
+<tr class="memdesc:a3810beeebacf4d530a75f64d3da3d6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a3810beeebacf4d530a75f64d3da3d6f0" title="Player::handleButtonDownChange Signal to change the Down controll state (true/false)">Player::handleButtonDownChange</a> Signal to change the Down controll state (true/false)  <a href="classPlayer.html#a3810beeebacf4d530a75f64d3da3d6f0">More...</a><br /></td></tr>
 <tr class="separator:a3810beeebacf4d530a75f64d3da3d6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bf41ea319e337de5b7e3114d7a10c41"><td class="memItemLeft" align="right" valign="top"><a id="a2bf41ea319e337de5b7e3114d7a10c41"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a2bf41ea319e337de5b7e3114d7a10c41">handleButtonXChange</a> ()</td></tr>
-<tr class="memdesc:a2bf41ea319e337de5b7e3114d7a10c41"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a2bf41ea319e337de5b7e3114d7a10c41" title="Player::handleButtonXChange Signal to change the fire Bullet controll state (true/false)">Player::handleButtonXChange</a> Signal to change the fire <a class="el" href="classBullet.html" title="Basic projectile type to shot enemies. Works against EnemyCyborg.">Bullet</a> controll state (true/false) <br /></td></tr>
+<tr class="memitem:a2bf41ea319e337de5b7e3114d7a10c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a2bf41ea319e337de5b7e3114d7a10c41">handleButtonXChange</a> ()</td></tr>
+<tr class="memdesc:a2bf41ea319e337de5b7e3114d7a10c41"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a2bf41ea319e337de5b7e3114d7a10c41" title="Player::handleButtonXChange Signal to change the fire Bullet controll state (true/false)">Player::handleButtonXChange</a> Signal to change the fire <a class="el" href="classBullet.html" title="Basic projectile type to shot enemies. Works against EnemyCyborg.">Bullet</a> controll state (true/false)  <a href="classPlayer.html#a2bf41ea319e337de5b7e3114d7a10c41">More...</a><br /></td></tr>
 <tr class="separator:a2bf41ea319e337de5b7e3114d7a10c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d17b530ced8817c063c494e6a73b60e"><td class="memItemLeft" align="right" valign="top"><a id="a5d17b530ced8817c063c494e6a73b60e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a5d17b530ced8817c063c494e6a73b60e">handleButtonSqChange</a> ()</td></tr>
-<tr class="memdesc:a5d17b530ced8817c063c494e6a73b60e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a5d17b530ced8817c063c494e6a73b60e" title="Player::handleButtonSqChange Signal to change the fire Flamethrower controll state (true/false)">Player::handleButtonSqChange</a> Signal to change the fire <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> controll state (true/false) <br /></td></tr>
+<tr class="memitem:a5d17b530ced8817c063c494e6a73b60e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a5d17b530ced8817c063c494e6a73b60e">handleButtonSqChange</a> ()</td></tr>
+<tr class="memdesc:a5d17b530ced8817c063c494e6a73b60e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a5d17b530ced8817c063c494e6a73b60e" title="Player::handleButtonSqChange Signal to change the fire Flamethrower controll state (true/false)">Player::handleButtonSqChange</a> Signal to change the fire <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> controll state (true/false)  <a href="classPlayer.html#a5d17b530ced8817c063c494e6a73b60e">More...</a><br /></td></tr>
 <tr class="separator:a5d17b530ced8817c063c494e6a73b60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f3c4a95c8bf772358557071f82aa16"><td class="memItemLeft" align="right" valign="top"><a id="a98f3c4a95c8bf772358557071f82aa16"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a98f3c4a95c8bf772358557071f82aa16">handleButtonTrChange</a> ()</td></tr>
-<tr class="memdesc:a98f3c4a95c8bf772358557071f82aa16"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a98f3c4a95c8bf772358557071f82aa16" title="Player::handleButtonTrChange Signal to change the fire Laser controll state (true/false)">Player::handleButtonTrChange</a> Signal to change the fire <a class="el" href="classLaser.html" title="Third weapon type that Player can use to eliminate enemies. Works against EnemySentients.">Laser</a> controll state (true/false) <br /></td></tr>
+<tr class="memitem:a98f3c4a95c8bf772358557071f82aa16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a98f3c4a95c8bf772358557071f82aa16">handleButtonTrChange</a> ()</td></tr>
+<tr class="memdesc:a98f3c4a95c8bf772358557071f82aa16"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a98f3c4a95c8bf772358557071f82aa16" title="Player::handleButtonTrChange Signal to change the fire Laser controll state (true/false)">Player::handleButtonTrChange</a> Signal to change the fire <a class="el" href="classLaser.html" title="Third weapon type that Player can use to eliminate enemies. Works against EnemySentients.">Laser</a> controll state (true/false)  <a href="classPlayer.html#a98f3c4a95c8bf772358557071f82aa16">More...</a><br /></td></tr>
 <tr class="separator:a98f3c4a95c8bf772358557071f82aa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc8673f1114b6aaf800535896378d536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#acc8673f1114b6aaf800535896378d536">handleXAxisLeftThumbstick</a> (double value)</td></tr>
-<tr class="memdesc:acc8673f1114b6aaf800535896378d536"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#acc8673f1114b6aaf800535896378d536" title="Player::handleXAxisLeftThumbstick Signal to read the X axis thumbstick value.">Player::handleXAxisLeftThumbstick</a> Signal to read the X axis thumbstick value.  <a href="classPlayer.html#acc8673f1114b6aaf800535896378d536">More...</a><br /></td></tr>
-<tr class="separator:acc8673f1114b6aaf800535896378d536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dda7a8ea82a23d3efdcdb5d93dbac46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a3dda7a8ea82a23d3efdcdb5d93dbac46">handleYAxisLeftThumbstick</a> (double value)</td></tr>
-<tr class="memdesc:a3dda7a8ea82a23d3efdcdb5d93dbac46"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a3dda7a8ea82a23d3efdcdb5d93dbac46" title="Player::handleYAxisLeftThumbstick Signal to read the X axis thumbstick value.">Player::handleYAxisLeftThumbstick</a> Signal to read the X axis thumbstick value.  <a href="classPlayer.html#a3dda7a8ea82a23d3efdcdb5d93dbac46">More...</a><br /></td></tr>
-<tr class="separator:a3dda7a8ea82a23d3efdcdb5d93dbac46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d2711df46ba4b0de1892bd5ce98d90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ac2d2711df46ba4b0de1892bd5ce98d90">handleXAxisLeftThumbstick</a> (const double value)</td></tr>
+<tr class="memdesc:ac2d2711df46ba4b0de1892bd5ce98d90"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#ac2d2711df46ba4b0de1892bd5ce98d90" title="Player::handleXAxisLeftThumbstick Signal to read the X axis thumbstick value.">Player::handleXAxisLeftThumbstick</a> Signal to read the X axis thumbstick value.  <a href="classPlayer.html#ac2d2711df46ba4b0de1892bd5ce98d90">More...</a><br /></td></tr>
+<tr class="separator:ac2d2711df46ba4b0de1892bd5ce98d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da6c61142c1dc76fdbd93adb5654ab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a2da6c61142c1dc76fdbd93adb5654ab7">handleYAxisLeftThumbstick</a> (const double value)</td></tr>
+<tr class="memdesc:a2da6c61142c1dc76fdbd93adb5654ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPlayer.html#a2da6c61142c1dc76fdbd93adb5654ab7" title="Player::handleYAxisLeftThumbstick Signal to read the X axis thumbstick value.">Player::handleYAxisLeftThumbstick</a> Signal to read the X axis thumbstick value.  <a href="classPlayer.html#a2da6c61142c1dc76fdbd93adb5654ab7">More...</a><br /></td></tr>
+<tr class="separator:a2da6c61142c1dc76fdbd93adb5654ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7256f06463cd0f3f84baca8307aa0086"><td class="memItemLeft" align="right" valign="top"><a id="a7256f06463cd0f3f84baca8307aa0086"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a7256f06463cd0f3f84baca8307aa0086">Player</a> (QGamepad *gamepad)</td></tr>
-<tr class="memdesc:a7256f06463cd0f3f84baca8307aa0086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a>:: <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a> object. Sets all the key flags to false and connects the gamepad. <br /></td></tr>
+<tr class="memitem:a7256f06463cd0f3f84baca8307aa0086"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a7256f06463cd0f3f84baca8307aa0086">Player</a> (QGamepad *<a class="el" href="classPlayer.html#afde82258162241d92fd0a33f874f9032">gamepad</a>)</td></tr>
+<tr class="memdesc:a7256f06463cd0f3f84baca8307aa0086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a>:: <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a> object. Sets all the key flags to false and connects the gamepad.  <a href="classPlayer.html#a7256f06463cd0f3f84baca8307aa0086">More...</a><br /></td></tr>
 <tr class="separator:a7256f06463cd0f3f84baca8307aa0086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d269c4118c29b0ee85c1e0f674260ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a4d269c4118c29b0ee85c1e0f674260ee">keyPressEvent</a> (QKeyEvent *event)</td></tr>
 <tr class="memdesc:a4d269c4118c29b0ee85c1e0f674260ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and sets the key flags to true on press and reads the controller inputs.  <a href="classPlayer.html#a4d269c4118c29b0ee85c1e0f674260ee">More...</a><br /></td></tr>
@@ -158,48 +167,270 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09f3d5dea93b5699138eba6f4f420b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a09f3d5dea93b5699138eba6f4f420b27">keyReleaseEvent</a> (QKeyEvent *event)</td></tr>
 <tr class="memdesc:a09f3d5dea93b5699138eba6f4f420b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and sets the key flags to false on release.  <a href="classPlayer.html#a09f3d5dea93b5699138eba6f4f420b27">More...</a><br /></td></tr>
 <tr class="separator:a09f3d5dea93b5699138eba6f4f420b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8234bcfd8bef2b794c4022583de624c"><td class="memItemLeft" align="right" valign="top"><a id="ac8234bcfd8bef2b794c4022583de624c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>gamepadPressEvent</b> ()</td></tr>
+<tr class="memitem:ac8234bcfd8bef2b794c4022583de624c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ac8234bcfd8bef2b794c4022583de624c">gamepadPressEvent</a> ()</td></tr>
 <tr class="separator:ac8234bcfd8bef2b794c4022583de624c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:afde82258162241d92fd0a33f874f9032"><td class="memItemLeft" align="right" valign="top"><a id="afde82258162241d92fd0a33f874f9032"></a>
-QGamepad *&#160;</td><td class="memItemRight" valign="bottom"><b>gamepad</b></td></tr>
+<tr class="memitem:afde82258162241d92fd0a33f874f9032"><td class="memItemLeft" align="right" valign="top">QGamepad *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#afde82258162241d92fd0a33f874f9032">gamepad</a></td></tr>
 <tr class="separator:afde82258162241d92fd0a33f874f9032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23eeb68d978f0a63e4389e418d3836d4"><td class="memItemLeft" align="right" valign="top"><a id="a23eeb68d978f0a63e4389e418d3836d4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyLeftPressed</b></td></tr>
+<tr class="memitem:a23eeb68d978f0a63e4389e418d3836d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a23eeb68d978f0a63e4389e418d3836d4">keyLeftPressed</a></td></tr>
 <tr class="separator:a23eeb68d978f0a63e4389e418d3836d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb4cc8c0ba3b03456414d2e4c31c2b2"><td class="memItemLeft" align="right" valign="top"><a id="afdb4cc8c0ba3b03456414d2e4c31c2b2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyRightPressed</b></td></tr>
+<tr class="memitem:afdb4cc8c0ba3b03456414d2e4c31c2b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#afdb4cc8c0ba3b03456414d2e4c31c2b2">keyRightPressed</a></td></tr>
 <tr class="separator:afdb4cc8c0ba3b03456414d2e4c31c2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452d9a6c28fa5d5ed561208dbce8fdea"><td class="memItemLeft" align="right" valign="top"><a id="a452d9a6c28fa5d5ed561208dbce8fdea"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyUpPressed</b></td></tr>
+<tr class="memitem:a452d9a6c28fa5d5ed561208dbce8fdea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a452d9a6c28fa5d5ed561208dbce8fdea">keyUpPressed</a></td></tr>
 <tr class="separator:a452d9a6c28fa5d5ed561208dbce8fdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af39e038f528fc8aa93f7ce05267785a0"><td class="memItemLeft" align="right" valign="top"><a id="af39e038f528fc8aa93f7ce05267785a0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyDownPressed</b></td></tr>
+<tr class="memitem:af39e038f528fc8aa93f7ce05267785a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#af39e038f528fc8aa93f7ce05267785a0">keyDownPressed</a></td></tr>
 <tr class="separator:af39e038f528fc8aa93f7ce05267785a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e55eb3791b6007c066b1a2305eb7f7b"><td class="memItemLeft" align="right" valign="top"><a id="a3e55eb3791b6007c066b1a2305eb7f7b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keySpacebarPressed</b></td></tr>
+<tr class="memitem:a3e55eb3791b6007c066b1a2305eb7f7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a3e55eb3791b6007c066b1a2305eb7f7b">keySpacebarPressed</a></td></tr>
 <tr class="separator:a3e55eb3791b6007c066b1a2305eb7f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81ad4c1f199fb5587f63c673f3bb2bf7"><td class="memItemLeft" align="right" valign="top"><a id="a81ad4c1f199fb5587f63c673f3bb2bf7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyFlamePressed</b></td></tr>
+<tr class="memitem:a81ad4c1f199fb5587f63c673f3bb2bf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a81ad4c1f199fb5587f63c673f3bb2bf7">keyFlamePressed</a></td></tr>
 <tr class="separator:a81ad4c1f199fb5587f63c673f3bb2bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40208288c0efbb497fd55921955dfe2d"><td class="memItemLeft" align="right" valign="top"><a id="a40208288c0efbb497fd55921955dfe2d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyLaserPressed</b></td></tr>
+<tr class="memitem:a40208288c0efbb497fd55921955dfe2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a40208288c0efbb497fd55921955dfe2d">keyLaserPressed</a></td></tr>
 <tr class="separator:a40208288c0efbb497fd55921955dfe2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa75644db58c9cd97e9e302bdfc056fc"><td class="memItemLeft" align="right" valign="top"><a id="aaa75644db58c9cd97e9e302bdfc056fc"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>xAxisValue</b></td></tr>
+<tr class="memitem:aaa75644db58c9cd97e9e302bdfc056fc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aaa75644db58c9cd97e9e302bdfc056fc">xAxisValue</a></td></tr>
 <tr class="separator:aaa75644db58c9cd97e9e302bdfc056fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c45ce69ab9ad100b3363e71f100c6a"><td class="memItemLeft" align="right" valign="top"><a id="aa0c45ce69ab9ad100b3363e71f100c6a"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>yAxisValue</b></td></tr>
+<tr class="memitem:aa0c45ce69ab9ad100b3363e71f100c6a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aa0c45ce69ab9ad100b3363e71f100c6a">yAxisValue</a></td></tr>
 <tr class="separator:aa0c45ce69ab9ad100b3363e71f100c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a> class to controll player and handle all events connectes to his movement. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="acc8673f1114b6aaf800535896378d536"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc8673f1114b6aaf800535896378d536">&#9670;&nbsp;</a></span>handleXAxisLeftThumbstick</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7256f06463cd0f3f84baca8307aa0086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7256f06463cd0f3f84baca8307aa0086">&#9670;&nbsp;</a></span>Player()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Player::Player </td>
+          <td>(</td>
+          <td class="paramtype">QGamepad *&#160;</td>
+          <td class="paramname"><em>gamepad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a>:: <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a> object. Sets all the key flags to false and connects the gamepad. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gamepad</td><td>gamepad pointer to read axis values </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac8234bcfd8bef2b794c4022583de624c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8234bcfd8bef2b794c4022583de624c">&#9670;&nbsp;</a></span>gamepadPressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::gamepadPressEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3810beeebacf4d530a75f64d3da3d6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3810beeebacf4d530a75f64d3da3d6f0">&#9670;&nbsp;</a></span>handleButtonDownChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleButtonDownChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPlayer.html#a3810beeebacf4d530a75f64d3da3d6f0" title="Player::handleButtonDownChange Signal to change the Down controll state (true/false)">Player::handleButtonDownChange</a> Signal to change the Down controll state (true/false) </p>
+
+</div>
+</div>
+<a id="a82a1bd000dacf0c0cd4c389747ba661f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a1bd000dacf0c0cd4c389747ba661f">&#9670;&nbsp;</a></span>handleButtonLeftChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleButtonLeftChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPlayer.html#a82a1bd000dacf0c0cd4c389747ba661f" title="Player::handleButtonLeftChange Signal to change the Left controll state (true/false)">Player::handleButtonLeftChange</a> Signal to change the Left controll state (true/false) </p>
+
+</div>
+</div>
+<a id="a5ebd13c8d0a8093b6f7580e454a9177f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ebd13c8d0a8093b6f7580e454a9177f">&#9670;&nbsp;</a></span>handleButtonRightChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleButtonRightChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPlayer.html#a5ebd13c8d0a8093b6f7580e454a9177f" title="Player::handleButtonRightChange Signal to change the Right controll state (true/false)">Player::handleButtonRightChange</a> Signal to change the Right controll state (true/false) </p>
+
+</div>
+</div>
+<a id="a5d17b530ced8817c063c494e6a73b60e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d17b530ced8817c063c494e6a73b60e">&#9670;&nbsp;</a></span>handleButtonSqChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleButtonSqChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPlayer.html#a5d17b530ced8817c063c494e6a73b60e" title="Player::handleButtonSqChange Signal to change the fire Flamethrower controll state (true/false)">Player::handleButtonSqChange</a> Signal to change the fire <a class="el" href="classFlamethrower.html" title="Second weapon type that Player can use to eliminate enemies. Works on Enemy.">Flamethrower</a> controll state (true/false) </p>
+
+</div>
+</div>
+<a id="a98f3c4a95c8bf772358557071f82aa16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f3c4a95c8bf772358557071f82aa16">&#9670;&nbsp;</a></span>handleButtonTrChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleButtonTrChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPlayer.html#a98f3c4a95c8bf772358557071f82aa16" title="Player::handleButtonTrChange Signal to change the fire Laser controll state (true/false)">Player::handleButtonTrChange</a> Signal to change the fire <a class="el" href="classLaser.html" title="Third weapon type that Player can use to eliminate enemies. Works against EnemySentients.">Laser</a> controll state (true/false) </p>
+
+</div>
+</div>
+<a id="acc72d1a19d8bec9abc1814dc99c42cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc72d1a19d8bec9abc1814dc99c42cb6">&#9670;&nbsp;</a></span>handleButtonUpChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleButtonUpChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPlayer.html#acc72d1a19d8bec9abc1814dc99c42cb6" title="Player::handleButtonUpChange Signal to change the Up controll state (true/false)">Player::handleButtonUpChange</a> Signal to change the Up controll state (true/false) </p>
+
+</div>
+</div>
+<a id="a2bf41ea319e337de5b7e3114d7a10c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf41ea319e337de5b7e3114d7a10c41">&#9670;&nbsp;</a></span>handleButtonXChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleButtonXChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPlayer.html#a2bf41ea319e337de5b7e3114d7a10c41" title="Player::handleButtonXChange Signal to change the fire Bullet controll state (true/false)">Player::handleButtonXChange</a> Signal to change the fire <a class="el" href="classBullet.html" title="Basic projectile type to shot enemies. Works against EnemyCyborg.">Bullet</a> controll state (true/false) </p>
+
+</div>
+</div>
+<a id="ac2d2711df46ba4b0de1892bd5ce98d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d2711df46ba4b0de1892bd5ce98d90">&#9670;&nbsp;</a></span>handleXAxisLeftThumbstick</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +441,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>yAxisValue</b></td>
         <tr>
           <td class="memname">void Player::handleXAxisLeftThumbstick </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -222,18 +453,18 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>yAxisValue</b></td>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classPlayer.html#acc8673f1114b6aaf800535896378d536" title="Player::handleXAxisLeftThumbstick Signal to read the X axis thumbstick value.">Player::handleXAxisLeftThumbstick</a> Signal to read the X axis thumbstick value. </p>
+<p><a class="el" href="classPlayer.html#ac2d2711df46ba4b0de1892bd5ce98d90" title="Player::handleXAxisLeftThumbstick Signal to read the X axis thumbstick value.">Player::handleXAxisLeftThumbstick</a> Signal to read the X axis thumbstick value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>thumbstick value (-1.0 - 1.0) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>thumbstick value (-1.0 - 1.0) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a3dda7a8ea82a23d3efdcdb5d93dbac46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dda7a8ea82a23d3efdcdb5d93dbac46">&#9670;&nbsp;</a></span>handleYAxisLeftThumbstick</h2>
+<a id="a2da6c61142c1dc76fdbd93adb5654ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da6c61142c1dc76fdbd93adb5654ab7">&#9670;&nbsp;</a></span>handleYAxisLeftThumbstick</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +475,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>yAxisValue</b></td>
         <tr>
           <td class="memname">void Player::handleYAxisLeftThumbstick </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -256,10 +487,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>yAxisValue</b></td>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classPlayer.html#a3dda7a8ea82a23d3efdcdb5d93dbac46" title="Player::handleYAxisLeftThumbstick Signal to read the X axis thumbstick value.">Player::handleYAxisLeftThumbstick</a> Signal to read the X axis thumbstick value. </p>
+<p><a class="el" href="classPlayer.html#a2da6c61142c1dc76fdbd93adb5654ab7" title="Player::handleYAxisLeftThumbstick Signal to read the X axis thumbstick value.">Player::handleYAxisLeftThumbstick</a> Signal to read the X axis thumbstick value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>thumbstick value (-1.0 - 1.0) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>thumbstick value (-1.0 - 1.0) </td></tr>
   </table>
   </dd>
 </dl>
@@ -285,7 +516,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>yAxisValue</b></td>
 <p>Listens and sets the key flags to true on press and reads the controller inputs. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>event variable indicating any event in the app, like button press. </td></tr>
   </table>
   </dd>
 </dl>
@@ -311,10 +542,232 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>yAxisValue</b></td>
 <p>Listens and sets the key flags to false on release. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a59ae3f2c7151032a85e58b1591cad769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ae3f2c7151032a85e58b1591cad769">&#9670;&nbsp;</a></span>spawn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::spawn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot position to spawn all the enemy types. </p>
+
+</div>
+</div>
+<a id="aabfc5a8cfd7fb8bbbc7a901d163da9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfc5a8cfd7fb8bbbc7a901d163da9d8">&#9670;&nbsp;</a></span>updatePlayerBullets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::updatePlayerBullets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot function to move the bullets. </p>
+
+</div>
+</div>
+<a id="ad48f687798a2245155d637b9fac6cda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48f687798a2245155d637b9fac6cda2">&#9670;&nbsp;</a></span>updatePlayerPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::updatePlayerPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot function to move the <a class="el" href="classPlayer.html" title="Main Player class to controll player and handle all events connectes to his movement.">Player</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afde82258162241d92fd0a33f874f9032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde82258162241d92fd0a33f874f9032">&#9670;&nbsp;</a></span>gamepad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGamepad* Player::gamepad</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af39e038f528fc8aa93f7ce05267785a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39e038f528fc8aa93f7ce05267785a0">&#9670;&nbsp;</a></span>keyDownPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::keyDownPressed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81ad4c1f199fb5587f63c673f3bb2bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ad4c1f199fb5587f63c673f3bb2bf7">&#9670;&nbsp;</a></span>keyFlamePressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::keyFlamePressed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40208288c0efbb497fd55921955dfe2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40208288c0efbb497fd55921955dfe2d">&#9670;&nbsp;</a></span>keyLaserPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::keyLaserPressed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23eeb68d978f0a63e4389e418d3836d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23eeb68d978f0a63e4389e418d3836d4">&#9670;&nbsp;</a></span>keyLeftPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::keyLeftPressed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdb4cc8c0ba3b03456414d2e4c31c2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb4cc8c0ba3b03456414d2e4c31c2b2">&#9670;&nbsp;</a></span>keyRightPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::keyRightPressed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e55eb3791b6007c066b1a2305eb7f7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e55eb3791b6007c066b1a2305eb7f7b">&#9670;&nbsp;</a></span>keySpacebarPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::keySpacebarPressed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a452d9a6c28fa5d5ed561208dbce8fdea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a452d9a6c28fa5d5ed561208dbce8fdea">&#9670;&nbsp;</a></span>keyUpPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::keyUpPressed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa75644db58c9cd97e9e302bdfc056fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa75644db58c9cd97e9e302bdfc056fc">&#9670;&nbsp;</a></span>xAxisValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::xAxisValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0c45ce69ab9ad100b3363e71f100c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c45ce69ab9ad100b3363e71f100c6a">&#9670;&nbsp;</a></span>yAxisValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::yAxisValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -323,9 +776,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>yAxisValue</b></td>
 <li>/home/feniks/my_ws/6sem/WDS/SpaceInvaders/SpaceInvaders/src/<a class="el" href="Player_8cpp.html">Player.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classPlayer.html">Player</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

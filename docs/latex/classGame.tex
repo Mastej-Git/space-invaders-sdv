@@ -30,51 +30,39 @@ Collaboration diagram for Game\+:\nopagebreak
 \doxysubsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGame_a786270db041794c82bd32be55a416688}\label{classGame_a786270db041794c82bd32be55a416688}} 
-void {\bfseries update\+Graph} ()
+void \mbox{\hyperlink{classGame_a786270db041794c82bd32be55a416688}{update\+Graph}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classGame_ae3c64a8dd73de0a99849db8ec0e9a86c}{Game}} (QWidget $\ast$parent=0)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGame}{Game}}\+:\+: \mbox{\hyperlink{classGame}{Game}} object. Crates and sets all the game components -\/ scene, player, score, health, enemies, GUI. Also creates signals for enemy spawning, updating player position, updating player projectiles. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGame_a759ede70d6e7cb6db78eceb5c4603d9c}{draw\+Panel}} (int x, int y, int width, int height, QColor color, double opacity)
+void \mbox{\hyperlink{classGame_a7ff59209d4edf12c84266b9a6645a629}{draw\+Panel}} (const int x, const int y, const int width, const int height, const QColor color, const double opacity)
 \begin{DoxyCompactList}\small\item\em Creates GUI background panel wothout any widgets. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGame_ae730058e66f3ed1290b20e78b531f004}\label{classGame_ae730058e66f3ed1290b20e78b531f004}} 
 void \mbox{\hyperlink{classGame_ae730058e66f3ed1290b20e78b531f004}{draw\+GUI}} ()
 \begin{DoxyCompactList}\small\item\em Draws all the GUI widgets -\/ controller indicator circle, difficulty \mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}}, language \mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}}, and all the texts. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classGame_a60d93d3b7af946d169a53032d901316d}\label{classGame_a60d93d3b7af946d169a53032d901316d}} 
-void {\bfseries combo\+Box\+Change} (int index, QCombo\+Box \&language)
+void \mbox{\hyperlink{classGame_a60d93d3b7af946d169a53032d901316d}{combo\+Box\+Change}} (int index, QCombo\+Box \&\mbox{\hyperlink{classGame_ad2d569070e1bfd72a00ff659d13bdec0}{language}})
 \item 
-\mbox{\Hypertarget{classGame_a5107ecf532a99e8e0dfcecd1d0b5b9f5}\label{classGame_a5107ecf532a99e8e0dfcecd1d0b5b9f5}} 
-void {\bfseries resize\+Event} (QResize\+Event $\ast$event)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classGame_a5107ecf532a99e8e0dfcecd1d0b5b9f5}{resize\+Event}} (QResize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Helps scaling and rezising window. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGame_a8119e3b9a632906c6808fa294b46a92a}\label{classGame_a8119e3b9a632906c6808fa294b46a92a}} 
-QGraphics\+Scene $\ast$ {\bfseries scene}
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{classGame_a8119e3b9a632906c6808fa294b46a92a}{scene}}
 \item 
-\mbox{\Hypertarget{classGame_abec70aa1c0269a9a7e171af4d79e08bf}\label{classGame_abec70aa1c0269a9a7e171af4d79e08bf}} 
-\mbox{\hyperlink{classPlayer}{Player}} $\ast$ {\bfseries player}
+\mbox{\hyperlink{classPlayer}{Player}} $\ast$ \mbox{\hyperlink{classGame_abec70aa1c0269a9a7e171af4d79e08bf}{player}}
 \item 
-\mbox{\Hypertarget{classGame_ad195acc6b5ee17a5a07fea0b7b4ff5e2}\label{classGame_ad195acc6b5ee17a5a07fea0b7b4ff5e2}} 
-\mbox{\hyperlink{classScore}{Score}} $\ast$ {\bfseries score}
+\mbox{\hyperlink{classScore}{Score}} $\ast$ \mbox{\hyperlink{classGame_ad195acc6b5ee17a5a07fea0b7b4ff5e2}{score}}
 \item 
-\mbox{\Hypertarget{classGame_a4cfa8ef83412c73d759b3965804f42aa}\label{classGame_a4cfa8ef83412c73d759b3965804f42aa}} 
-\mbox{\hyperlink{classHealth}{Health}} $\ast$ {\bfseries health}
+\mbox{\hyperlink{classHealth}{Health}} $\ast$ \mbox{\hyperlink{classGame_a4cfa8ef83412c73d759b3965804f42aa}{health}}
 \item 
-\mbox{\Hypertarget{classGame_a151142ea1677dac2e2ddbaaa82e7569f}\label{classGame_a151142ea1677dac2e2ddbaaa82e7569f}} 
-\mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}} $\ast$ {\bfseries difficulty}
+\mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}} $\ast$ \mbox{\hyperlink{classGame_a151142ea1677dac2e2ddbaaa82e7569f}{difficulty}}
 \item 
-\mbox{\Hypertarget{classGame_ad2d569070e1bfd72a00ff659d13bdec0}\label{classGame_ad2d569070e1bfd72a00ff659d13bdec0}} 
-\mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}} $\ast$ {\bfseries language}
+\mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}} $\ast$ \mbox{\hyperlink{classGame_ad2d569070e1bfd72a00ff659d13bdec0}{language}}
 \item 
-\mbox{\Hypertarget{classGame_aa35af834973e67352c46669757869a32}\label{classGame_aa35af834973e67352c46669757869a32}} 
-\mbox{\hyperlink{classControllerManager}{Controller\+Manager}} $\ast$ {\bfseries manager}
+\mbox{\hyperlink{classControllerManager}{Controller\+Manager}} $\ast$ \mbox{\hyperlink{classGame_aa35af834973e67352c46669757869a32}{manager}}
 \item 
-\mbox{\Hypertarget{classGame_a21883094138ac3de6c3f2c3523937235}\label{classGame_a21883094138ac3de6c3f2c3523937235}} 
-\mbox{\hyperlink{classAxisPlot}{Axis\+Plot}} $\ast$ {\bfseries axises\+\_\+plot}
+\mbox{\hyperlink{classAxisPlot}{Axis\+Plot}} $\ast$ \mbox{\hyperlink{classGame_a21883094138ac3de6c3f2c3523937235}{axises\+\_\+plot}}
 \end{DoxyCompactItemize}
 
 
@@ -93,38 +81,126 @@ Main game class to controll events in the game.
 Construct a new \mbox{\hyperlink{classGame}{Game}}\+:\+: \mbox{\hyperlink{classGame}{Game}} object. Crates and sets all the game components -\/ scene, player, score, health, enemies, GUI. Also creates signals for enemy spawning, updating player position, updating player projectiles. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em parent} & \\
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em parent} & a parent widget \\
 \hline
 \end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGame_a759ede70d6e7cb6db78eceb5c4603d9c}\label{classGame_a759ede70d6e7cb6db78eceb5c4603d9c}} 
+\mbox{\Hypertarget{classGame_a60d93d3b7af946d169a53032d901316d}\label{classGame_a60d93d3b7af946d169a53032d901316d}} 
+\index{Game@{Game}!comboBoxChange@{comboBoxChange}}
+\index{comboBoxChange@{comboBoxChange}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{comboBoxChange()}{comboBoxChange()}}
+{\footnotesize\ttfamily void Game\+::combo\+Box\+Change (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{QCombo\+Box \&}]{language }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGame_ae730058e66f3ed1290b20e78b531f004}\label{classGame_ae730058e66f3ed1290b20e78b531f004}} 
+\index{Game@{Game}!drawGUI@{drawGUI}}
+\index{drawGUI@{drawGUI}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawGUI()}{drawGUI()}}
+{\footnotesize\ttfamily void Game\+::draw\+GUI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws all the GUI widgets -\/ controller indicator circle, difficulty \mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}}, language \mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}}, and all the texts. 
+
+\mbox{\Hypertarget{classGame_a7ff59209d4edf12c84266b9a6645a629}\label{classGame_a7ff59209d4edf12c84266b9a6645a629}} 
 \index{Game@{Game}!drawPanel@{drawPanel}}
 \index{drawPanel@{drawPanel}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{drawPanel()}{drawPanel()}}
-{\footnotesize\ttfamily void Game\+::draw\+Panel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{QColor}]{color,  }\item[{double}]{opacity }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Game\+::draw\+Panel (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y,  }\item[{const int}]{width,  }\item[{const int}]{height,  }\item[{const QColor}]{color,  }\item[{const double}]{opacity }\end{DoxyParamCaption})}
 
 
 
 Creates GUI background panel wothout any widgets. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em x} & \\
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & GUI x posistion \\
 \hline
-{\em y} & \\
+\mbox{\texttt{ in}}  & {\em y} & GUI y position \\
 \hline
-{\em width} & \\
+\mbox{\texttt{ in}}  & {\em width} & GUI width \\
 \hline
-{\em height} & \\
+\mbox{\texttt{ in}}  & {\em height} & GUI height \\
 \hline
-{\em color} & \\
+\mbox{\texttt{ in}}  & {\em color} & GUI color \\
 \hline
-{\em opacity} & \\
+\mbox{\texttt{ in}}  & {\em opacity} & GUI opacity \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classGame_a5107ecf532a99e8e0dfcecd1d0b5b9f5}\label{classGame_a5107ecf532a99e8e0dfcecd1d0b5b9f5}} 
+\index{Game@{Game}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
+{\footnotesize\ttfamily void Game\+::resize\+Event (\begin{DoxyParamCaption}\item[{QResize\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Helps scaling and rezising window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a786270db041794c82bd32be55a416688}\label{classGame_a786270db041794c82bd32be55a416688}} 
+\index{Game@{Game}!updateGraph@{updateGraph}}
+\index{updateGraph@{updateGraph}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{updateGraph}{updateGraph}}
+{\footnotesize\ttfamily void Game\+::update\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGame_a21883094138ac3de6c3f2c3523937235}\label{classGame_a21883094138ac3de6c3f2c3523937235}} 
+\index{Game@{Game}!axises\_plot@{axises\_plot}}
+\index{axises\_plot@{axises\_plot}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{axises\_plot}{axises\_plot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxisPlot}{Axis\+Plot}}$\ast$ Game\+::axises\+\_\+plot}
+
+\mbox{\Hypertarget{classGame_a151142ea1677dac2e2ddbaaa82e7569f}\label{classGame_a151142ea1677dac2e2ddbaaa82e7569f}} 
+\index{Game@{Game}!difficulty@{difficulty}}
+\index{difficulty@{difficulty}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{difficulty}{difficulty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}}$\ast$ Game\+::difficulty}
+
+\mbox{\Hypertarget{classGame_a4cfa8ef83412c73d759b3965804f42aa}\label{classGame_a4cfa8ef83412c73d759b3965804f42aa}} 
+\index{Game@{Game}!health@{health}}
+\index{health@{health}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHealth}{Health}}$\ast$ Game\+::health}
+
+\mbox{\Hypertarget{classGame_ad2d569070e1bfd72a00ff659d13bdec0}\label{classGame_ad2d569070e1bfd72a00ff659d13bdec0}} 
+\index{Game@{Game}!language@{language}}
+\index{language@{language}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{language}{language}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComboBoxTxt}{Combo\+Box\+Txt}} $\ast$ Game\+::language}
+
+\mbox{\Hypertarget{classGame_aa35af834973e67352c46669757869a32}\label{classGame_aa35af834973e67352c46669757869a32}} 
+\index{Game@{Game}!manager@{manager}}
+\index{manager@{manager}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classControllerManager}{Controller\+Manager}}$\ast$ Game\+::manager}
+
+\mbox{\Hypertarget{classGame_abec70aa1c0269a9a7e171af4d79e08bf}\label{classGame_abec70aa1c0269a9a7e171af4d79e08bf}} 
+\index{Game@{Game}!player@{player}}
+\index{player@{player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}}$\ast$ Game\+::player}
+
+\mbox{\Hypertarget{classGame_a8119e3b9a632906c6808fa294b46a92a}\label{classGame_a8119e3b9a632906c6808fa294b46a92a}} 
+\index{Game@{Game}!scene@{scene}}
+\index{scene@{scene}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ Game\+::scene}
+
+\mbox{\Hypertarget{classGame_ad195acc6b5ee17a5a07fea0b7b4ff5e2}\label{classGame_ad195acc6b5ee17a5a07fea0b7b4ff5e2}} 
+\index{Game@{Game}!score@{score}}
+\index{score@{score}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScore}{Score}}$\ast$ Game\+::score}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

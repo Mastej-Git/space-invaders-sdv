@@ -18,16 +18,16 @@
 #include <QDebug>
 #include <QtGamepad/QGamepad>
 #include <QtGamepad/QGamepadManager>
+#include <QTranslator>
 
 #include "../inc/Game.h"
-#include "../inc/Enemy.h"
 #include "../inc/qcustomplot.h"
 
 /**
  * @brief Construct a new Game:: Game object. Crates and sets all the game components - scene, player, score, health, enemies, GUI. 
  * Also creates signals for enemy spawning, updating player position, updating player projectiles. 
  * 
- * @param parent 
+ * @param[in] parent a parent widget
  */
 Game::Game(QWidget *parent) {
 
@@ -39,23 +39,21 @@ Game::Game(QWidget *parent) {
     setScene(this->scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-//    setFixedSize(950, 600);
     setBackgroundBrush(QColor("#050d33"));
+
+    // translator
+
+    QTranslator translator;
+    translator.load(":/language/polish.tr");
 
     // create the player
 
     QGamepadManager *gamepad_manager = QGamepadManager::instance();
-
     QGamepad *gamepad = new QGamepad(3302);
 
     this->player = new Player(gamepad);
-//    this->player->setRect(0, 0, 100, 100);
-    this->player->setPixmap(QPixmap(":/images/player_ship.png"));
-//    this->player->setPos(800/2 - this->player->rect().height()/2, 600 - this->player->rect().height());
-    this->player->setPos(800/2 - 50, 600 - 100);
     this->player->setFlag(QGraphicsItem::ItemIsFocusable);
     this->player->setFocus();
-//    this->player->setBrush(Qt::green);
     this->scene->addItem(this->player);
 
     // create the score
@@ -82,37 +80,19 @@ Game::Game(QWidget *parent) {
     timer2->start(100);
 
     this->drawGUI();
-
-    QGamepadManager *gamepadManager = QGamepadManager::instance();
-
-        // Check if any gamepad is connected
-        if (gamepadManager->connectedGamepads().count() > 0) {
-            qDebug() << "At least one gamepad connected.";
-
-            // You can retrieve the connected gamepads and their information
-            QList<int> gamepadIds = gamepadManager->connectedGamepads();
-
-            // For demonstration, print out the IDs of the connected gamepads
-            qDebug() << "Connected Gamepad IDs:";
-            for (int id : gamepadIds) {
-                qDebug() << "Gamepad ID:" << id;
-            }
-        } else {
-            qDebug() << "No gamepad connected.";
-        }
 }
 
 /**
  * @brief Creates GUI background panel wothout any widgets.
  * 
- * @param x 
- * @param y 
- * @param width 
- * @param height 
- * @param color 
- * @param opacity 
+ * @param[in] x GUI x posistion
+ * @param[in] y GUI y position
+ * @param[in] width GUI width
+ * @param[in] height GUI height
+ * @param[in] color GUI color
+ * @param[in] opacity GUI opacity
  */
-void Game::drawPanel(int x, int y, int width, int height, QColor color, double opacity) {
+void Game::drawPanel(const int x, const int y, const int width, const int height, const QColor color, const double opacity) {
 
     QGraphicsRectItem *panel = new QGraphicsRectItem(x, y, width, height);
     QBrush brush;
@@ -144,7 +124,7 @@ void Game::drawGUI() {
     timer->start(20);
 
     // controller indicator text
-    QGraphicsTextItem *controller_text = new QGraphicsTextItem("Controller");
+    QGraphicsTextItem *controller_text = new QGraphicsTextItem(QObject::tr("Controller"));
     controller_text->setPos(835, 8);
     controller_text->setDefaultTextColor(Qt::white);
 
@@ -153,7 +133,6 @@ void Game::drawGUI() {
     controller_text->setFont(controller_font);
 
     scene->addItem(controller_text);
-
 
     // plot
     this->axises_plot = new AxisPlot(this->player);
@@ -191,31 +170,13 @@ void Game::drawGUI() {
     QObject::connect(this->language->combo_box, SIGNAL(currentIndexChanged(int)), this->language, SLOT(change_language(int)));
 
     this->health->language_ptr = &(this->language->index);
-
-    // chart
-    QtCharts::QLineSeries *series = new QtCharts::QLineSeries();
-    series->append(0, 6);
-    series->append(2, 4);
-    series->append(3, 8);
-    series->append(7, 4);
-    series->append(10, 5);
-
-    *series << QPointF(11, 1) << QPointF(13, 3) << QPointF(17, 6) << QPointF(18, 3) << QPointF(20, 2);
-
-    QtCharts::QChart *chart = new QtCharts::QChart();
-    chart->legend()->hide();
-    chart->addSeries(series);
-    chart->setTitle("Axis position");
-
-    QtCharts::QChartView *chartView = new QtCharts::QChartView(chart);
-    chartView->setRenderHint(QPainter::Antialiasing);
+    this->score->language_ptr = &(this->language->index);
 }
 
-void Game::comboBoxChange(int index, QComboBox &language) {
-    QString selected_item = language.itemText(index);
-    qDebug() << "Selected item: " << selected_item;
-}
-
+/**
+ * @brief Helps scaling and rezising window
+ * @param event
+ */
 
 void Game::resizeEvent(QResizeEvent *event) {
     QGraphicsView::resizeEvent(event);

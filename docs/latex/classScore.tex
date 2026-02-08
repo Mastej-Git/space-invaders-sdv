@@ -36,6 +36,16 @@ void \mbox{\hyperlink{classScore_ab5dbfab6935903c075509546878cfbda}{increase}} (
 \begin{DoxyCompactList}\small\item\em Returns health number. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classScore_a0edd6880a4747e9ec07751030bdd4689}{get\+\_\+score}} ()
 \begin{DoxyCompactList}\small\item\em Sets health points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{classScore_a23bd669b5f6f265aa7ace8300a0ff3b1}{language\+\_\+ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classScore_a331b0927105c83ba760954eff6cf9fe9}{score}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -53,8 +63,8 @@ Cyan text in upper left corner indicating player score points.
 Construct a new \mbox{\hyperlink{classScore}{Score}}\+:\+: \mbox{\hyperlink{classScore}{Score}} object. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em parent} & \\
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em parent} & \\
 \hline
 \end{DoxyParams}
 
@@ -70,11 +80,9 @@ Construct a new \mbox{\hyperlink{classScore}{Score}}\+:\+: \mbox{\hyperlink{clas
 
 Sets health points. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em health} & \\
-\hline
-\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+score points value 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classScore_ab5dbfab6935903c075509546878cfbda}\label{classScore_ab5dbfab6935903c075509546878cfbda}} 
 \index{Score@{Score}!increase@{increase}}
 \index{increase@{increase}!Score@{Score}}
@@ -85,9 +93,21 @@ Sets health points.
 
 Returns health number. 
 
-\begin{DoxyReturn}{Returns}
-int 
-\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classScore_a23bd669b5f6f265aa7ace8300a0ff3b1}\label{classScore_a23bd669b5f6f265aa7ace8300a0ff3b1}} 
+\index{Score@{Score}!language\_ptr@{language\_ptr}}
+\index{language\_ptr@{language\_ptr}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{language\_ptr}{language\_ptr}}
+{\footnotesize\ttfamily int$\ast$ Score\+::language\+\_\+ptr}
+
+\mbox{\Hypertarget{classScore_a331b0927105c83ba760954eff6cf9fe9}\label{classScore_a331b0927105c83ba760954eff6cf9fe9}} 
+\index{Score@{Score}!score@{score}}
+\index{score@{score}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Score\+::score\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

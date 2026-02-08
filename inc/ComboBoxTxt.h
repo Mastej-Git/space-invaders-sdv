@@ -37,7 +37,7 @@ public:
     Player *player;
     QGraphicsTextItem **texts_table;
 
-    ComboBoxTxt(QStringList list, QString text, int x, int y, Health *health, Score *score, Player *player, QGraphicsTextItem **texts_table);
+    ComboBoxTxt(const QStringList &list, const QString text, const int x, const int y, Health *health, Score *score, Player *player, QGraphicsTextItem **texts_table);
 
 public slots:
     void change_item(int index);

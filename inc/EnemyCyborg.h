@@ -12,6 +12,7 @@
 #ifndef ENEMYCYBORG_H
 #define ENEMYCYBORG_H
 
+#include <QGraphicsPixmapItem>
 #include <QGraphicsRectItem>
 #include <QObject>
 
@@ -20,7 +21,7 @@
  * 
  */
 
-class EnemyCyborg : public QObject, public QGraphicsRectItem {
+class EnemyCyborg : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     EnemyCyborg();

@@ -15,14 +15,14 @@
 /**
  * @brief Construct a new Combo Box Txt:: Combo Box Txt object
  * 
- * @param list List of object that should be contained by the ComboBox
- * @param text Text Displayed above ComboBox
- * @param x ComboBox x position
- * @param y ComboBox y position
+ * @param[in] list List of object that should be contained by the ComboBox
+ * @param[in] text Text Displayed above ComboBox
+ * @param[in] x ComboBox x position
+ * @param[in] y ComboBox y position
  * @param[in, out] health Health pointer to change the health points
- * @param player Player pointer to return focus on the player character
+ * @param[in, out] player Player pointer to return focus on the player character
  */
-ComboBoxTxt::ComboBoxTxt(QStringList list, QString text, int x, int y, Health *health, Score *score, Player *player, QGraphicsTextItem **texts_table) {
+ComboBoxTxt::ComboBoxTxt(const QStringList &list, const QString text, const int x, const int y, Health *health, Score *score, Player *player, QGraphicsTextItem **texts_table) {
 
     this->combo_box = new QComboBox();
 
@@ -48,13 +48,13 @@ ComboBoxTxt::ComboBoxTxt(QStringList list, QString text, int x, int y, Health *h
 
     this->texts_table = texts_table;
 
-    this->index = 1;
+    this->index = 0;
 }
 
 /**
  * @brief Signal function to obatin index of the chosen item from difficulty ComboBoxTxt
  * 
- * @param index Index of the chosen item.
+ * @param[in] index Index of the chosen item.
  */
 void ComboBoxTxt::change_item(int index) {
     if (index == 0) {
@@ -72,7 +72,7 @@ void ComboBoxTxt::change_item(int index) {
 /**
  * @brief Signal function to obatin index of the chosen item from language ComboBoxTxt
  * 
- * @param index index of the chosen item.
+ * @param[in] index index of the chosen item.
  */
 void ComboBoxTxt::change_language(int index) {
     if (index == 1) {
