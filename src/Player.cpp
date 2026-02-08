@@ -146,7 +146,7 @@ void Player::updatePlayerBullets() {
     if (keySpacebarPressed) {
         Bullet *bullet = new Bullet();
         bullet->setPos(x(), y());
-        bullet->setBrush(Qt::yellow);
+        // bullet->setBrush(Qt::yellow);
         scene()->addItem(bullet);
     }
 
